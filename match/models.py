@@ -1,0 +1,14 @@
+from django.db import models
+
+class Match(models.Model):
+    season = models.CharField(max_length=50)
+    date = models.DateField()
+    result = models.CharField(max_length=50)
+    competition = models.CharField(max_length=50)
+    home_lineup = models.TextField(max_length=300)
+    away_lineup = models.TextField(max_length=300)
+    goalscorers = models.CharField(max_length=50)
+    assists = models.TextField(max_length=200)
+    yellow_cards = models.TextField(max_length=200)
+
+    
