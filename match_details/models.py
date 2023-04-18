@@ -13,12 +13,9 @@ class MatchDetails(models.Model):
         on_delete=models.CASCADE,
         related_name='match_details'
     )
-    friends = models.ForeignKey(
+    friends = models.ManyToManyField(
         'friend.Friends',
-        on_delete=models.CASCADE,
-        related_name='match_details',
-        blank=True,
-        null=True,
+        related_name='match_details'
     )
     photos = models.URLField(validators=[URLValidator()], blank=True, null=True)
     

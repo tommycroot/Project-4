@@ -8,3 +8,5 @@ class User(AbstractUser):
     profile_image = models.URLField(validators=[URLValidator()], blank=True, null=True)
 
     
+
+    

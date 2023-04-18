@@ -8,6 +8,7 @@ django = "*"
 psycopg2-binary = "*"
 pylint = "*"
 pyjwt = "*"
+django-environ = "*"
 
 [dev-packages]
 

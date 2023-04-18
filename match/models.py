@@ -10,5 +10,16 @@ class Match(models.Model):
     goalscorers = models.CharField(max_length=50)
     assists = models.TextField(max_length=200)
     yellow_cards = models.TextField(max_length=200)
+    home_team = models.ForeignKey(
+        'club.Club',
+        on_delete=models.CASCADE,
+        related_name='home_matches'
+    )
+    away_team = models.ForeignKey(
+        'club.Club',
+        on_delete=models.CASCADE,
+        related_name='away_matches'
+    )
+
 
     
