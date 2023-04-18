@@ -1,5 +1,5 @@
-from .common import MatchDetailSerializer
+from .common import MatchDetailsSerializer
 from match.serializers.common import MatchSerializer
 
-class PopulatedMatchDetailSerializer(MatchDetailSerializer):
-    match = MatchSerializer(many=True)
+class PopulatedMatchDetailSerializer(MatchDetailsSerializer):
+    match = MatchSerializer()

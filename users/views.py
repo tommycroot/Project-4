@@ -29,9 +29,10 @@ class LoginView(APIView):
             raise PermissionDenied('Unauthorized')
     
         dt = datetime.now() + timedelta(days=7)
+        exp_timestamp = int(dt.timestamp())
 
 
-        token = jwt.encode({ 'sub':  user_to_login.id, 'exp': int(dt.strftime('%S')) }, settings.SECRET_KEY, algorithm='HS256')
+        token = jwt.encode({ 'sub':  user_to_login.id, 'exp': exp_timestamp }, settings.SECRET_KEY, algorithm='HS256')
         print('TOKEN ->', token)
         
         return Response({ 'message': f"Welcome back, {user_to_login.username}", 'token': token })

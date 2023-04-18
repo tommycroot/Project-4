@@ -15,7 +15,8 @@ class MatchDetails(models.Model):
     )
     friends = models.ManyToManyField(
         'friend.Friends',
-        related_name='match_details'
+        related_name='match_details',
+        blank=True
     )
     photos = models.URLField(validators=[URLValidator()], blank=True, null=True)
     
