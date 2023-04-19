@@ -1,16 +1,28 @@
 import { useEffect } from 'react'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import axios from 'axios'
 
-const App = () => {
-  useEffect(() => {
-    const getData = async () => {
-      const { data } = await axios.get('/api/club/') // * <-- replace with your endpoint
-      console.log(data)
-    }
-    getData()
-  })
+import NavBar from './components/NavBar'
+import Register from './components/Auth/Register'
+import Login from './components/Auth/Login'
+import Home from './components/Home'
 
-  return <h1>Hello World</h1>
+const App = () => {
+
+  return (
+    <div className="site-wrapper">
+      <BrowserRouter>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/login" element={<Login />} /> 
+          <Route path="/register" element={<Register />} /> 
+        </Routes>
+      </BrowserRouter>
+    </div>
+
+  )
+
 }
 
 export default App
