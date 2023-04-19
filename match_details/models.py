@@ -17,6 +17,7 @@ class MatchDetails(models.Model):
         'friend.Friends',
         related_name='match_details',
         blank=True
+
     )
     photos = models.URLField(validators=[URLValidator()], blank=True, null=True)
     
