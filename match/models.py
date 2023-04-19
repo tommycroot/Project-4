@@ -1,4 +1,5 @@
 from django.db import models
+from django.core.validators import URLValidator
 
 class Match(models.Model):
     season = models.CharField(max_length=50)
@@ -20,5 +21,11 @@ class Match(models.Model):
         on_delete=models.CASCADE,
         related_name='away_matches'
     )
+    friends = models.ManyToManyField(
+        'friend.Friends',
+        related_name='match',
+        blank=True
+    )
+    photos = models.URLField(validators=[URLValidator()], blank=True, null=True)
 
     
