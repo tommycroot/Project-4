@@ -5,12 +5,13 @@ class Match(models.Model):
     season = models.CharField(max_length=50)
     date = models.DateField()
     result = models.CharField(max_length=50)
-    competition = models.CharField(max_length=50)
+    competition = models.CharField(max_length=100)
     home_lineup = models.TextField(max_length=300, blank=True, null=True)
     away_lineup = models.TextField(max_length=300, blank=True, null=True)
-    goalscorers = models.CharField(max_length=50, blank=True, null=True)
-    assists = models.TextField(max_length=200, blank=True, null=True)
-    yellow_cards = models.TextField(max_length=200, blank=True, null=True)
+    goalscorers = models.TextField(max_length=300, blank=True, null=True)
+    assists = models.TextField(max_length=300, blank=True, null=True)
+    yellow_cards = models.TextField(max_length=300, blank=True, null=True)
+    red_cards = models.TextField(max_length=300, blank=True, null=True)
     home_team = models.ForeignKey(
         'club.Club',
         on_delete=models.CASCADE,

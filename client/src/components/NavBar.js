@@ -23,6 +23,9 @@ const NavBar = () => {
             <Nav.Link to="/profile" as={Link} className={location.pathname === '/profile' ? 'active' : ''}>My Profile</Nav.Link>
           </Nav.Item>
           <Nav.Item>
+            <Nav.Link to="/match/new" as={Link} className={location.pathname === '/login' ? 'active' : ''}>Match New</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
             <span className="nav-link" onClick={handleLogOut}>Log Out</span>
           </Nav.Item>
         </>

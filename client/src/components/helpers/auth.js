@@ -2,7 +2,7 @@ import { Buffer } from 'buffer'
 import axios from 'axios'
 
 
-const tokenName = 'HAGL-TOKEN'
+const tokenName = 'FOOTY-TOKEN'
 
 export const getPayload = () => {
   const token = localStorage.getItem(tokenName) 
