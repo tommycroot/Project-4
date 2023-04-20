@@ -11,13 +11,13 @@ class MatchListView(APIView):
     permission_classes = (IsAuthenticated,)
     @exceptions
     def get(self, request):
-        match = Match.objects.all()
+        match = Match.objects.filter(owner=request.user)
         serialized_match = MatchSerializer(match, many=True) 
         return Response(serialized_match.data)
     
     @exceptions
     def post(self, request):
-        match = MatchSerializer(data=request.data)
+        match = MatchSerializer(data={ **request.data, 'owner': request.user.id })
         match.is_valid(raise_exception=True)
         match.save()
         return Response(match.data, status.HTTP_201_CREATED)

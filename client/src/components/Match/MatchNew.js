@@ -20,12 +20,11 @@ const MatchNew = () => {
     away_team: '',
     result: '',
     competition: '',
-    home_lineup: '',
-    away_lineup: '',
     goalscorers: '',
     assists: '',
     yellow_cards: '',
     red_cards: '',
+    notes: '',
   })
 
   const [ error, setError ] = useState('')
