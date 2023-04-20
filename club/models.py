@@ -6,3 +6,4 @@ class Club(models.Model):
     name = models.CharField(max_length=150)
     stadium = models.CharField(max_length=150)
     club_image = models.URLField(validators=[URLValidator()])
+    stadium_image = models.URLField(validators=[URLValidator()])
