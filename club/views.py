@@ -22,3 +22,12 @@ class ClubListView(APIView):
         club.is_valid(raise_exception=True)
         club.save()
         return Response(club.data, status.HTTP_201_CREATED)
+    
+class ClubDetailView(APIView):
+    permission_classes = (IsAuthenticated,)
+
+    @exceptions
+    def get(self, request, pk):
+        club = Club.objects.get(pk=pk)
+        serialized_club= ClubSerializer(club)
+        return Response(serialized_club.data)

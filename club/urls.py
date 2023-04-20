@@ -1,7 +1,8 @@
 from django.contrib import admin
 from django.urls import path
-from .views import ClubListView
+from .views import ClubListView, ClubDetailView
 
 urlpatterns = [
-    path('', ClubListView.as_view()), 
+    path('', ClubListView.as_view()),
+    path('<int:pk>/', ClubDetailView.as_view())
 ]

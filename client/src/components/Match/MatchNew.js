@@ -39,7 +39,7 @@ const MatchNew = () => {
     e.preventDefault()
     try {
       const { data } = await authenticated.post('/api/match/', formFields)
-      navigate(`/match/${data._id}`)
+      navigate(`/match/${data.id}`)
     } catch (err) {
       console.log(err)
       setError(err.response.data.message)

@@ -7,6 +7,7 @@ import Register from './components/Auth/Register'
 import Login from './components/Auth/Login'
 import Home from './components/Home'
 import MatchNew from './components/Match/MatchNew'
+import MatchPage from './components/Match/MatchPage'
 
 const App = () => {
 
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/login" element={<Login />} /> 
           <Route path="/register" element={<Register />} /> 
           <Route path="/match/new" element={<MatchNew />} /> 
+          <Route path="/match/:id" element={<MatchPage />} /> 
         </Routes>
       </BrowserRouter>
     </div>

@@ -11,7 +11,7 @@ class MatchListView(APIView):
     permission_classes = (IsAuthenticated,)
     @exceptions
     def get(self, request):
-        match = Match.objects.filter(owner=request.user)
+        match = Match.objects.filter(owner_id=request.user)
         serialized_match = MatchSerializer(match, many=True) 
         return Response(serialized_match.data)
     

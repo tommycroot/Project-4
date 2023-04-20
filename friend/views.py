@@ -11,7 +11,7 @@ class FriendListView(APIView):
     permission_classes = (IsAuthenticated,)
     @exceptions
     def get(self, request):
-        friends = Friends.objects.filter(user=request.user)
+        friends = Friends.objects.filter(owner_id=request.user)
         serialized_friends = FriendSerializer(friends, many=True) 
         return Response(serialized_friends.data)
     

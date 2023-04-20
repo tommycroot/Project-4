@@ -29,8 +29,8 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           <label htmlFor="season">Season</label>
           <select name="season" value={formFields.season} onChange={handleChange}>
             <option value="">Select a Season</option>
-            <option value="2223">2022/2023</option>
-            <option value="2324">2023/2024</option>
+            <option value="2022/2023">2022/2023</option>
+            <option value="2023/2024">2023/2024</option>
           </select>
           {/* Date */}
           <label htmlFor="date">Date</label>
@@ -54,7 +54,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           <label htmlFor="competition">Competiton</label>
           <select name="competition" value={formFields.competition} onChange={handleChange}>
             <option value="">Select a Competition</option>
-            <option value="premier">Premier League</option>
+            <option value="Premier League">Premier League</option>
             
           </select>
           {/* Goalscorers */}

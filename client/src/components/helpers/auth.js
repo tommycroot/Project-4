@@ -41,12 +41,12 @@ authenticated.interceptors.request.use(config => {
   console.log('ERROR', error)
 })
 
-// export const userIsOwner = (item) => {
-//   const payload = getPayload()
-//   if (!payload) return
-//   if (item && item.owner) {
-//     return payload.sub === item.owner.id
-//   }
+export const userIsOwner = (match) => {
+  const payload = getPayload()
+  if (!payload) return
+  if (match && match.owner) {
+    return payload.sub === match.owner
+  }
   
-// }
+}
 
