@@ -11,6 +11,9 @@ import { authenticated, getPayload } from '../helpers/auth'
 const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSubmit }) => {
   const [clubOptions, setClubOptions] = useState([])
   const [friends, setFriends] = useState([])
+  const [showModal, setShowModal] = useState(false)
+  const [newFriendName, setNewFriendName] = useState('')
+
   
 
   useEffect(() => {
@@ -35,7 +38,17 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
     getFriends()
   }, [])
   
-
+  const handleNewFriendSubmit = async () => {
+    try {
+      const response = await authenticated.post('/api/friend/', { name: newFriendName })
+      console.log('response', response.data)
+      setFriends([...friends, response.data])
+      setNewFriendName('')
+      setShowModal(false)
+    } catch (err) {
+      console.log(err.message)
+    }
+  }
 
   const handleChange = (e) => {
     if (e.target.name === 'friends') {
@@ -106,13 +119,38 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
               onChange={selected => {
                 console.log(selected)
                 setFormFields({ ...formFields, friends: selected })
-
-              }}
+              }}              
             />
           )}
           {/* Notes */}
           <label htmlFor="notes">Notes</label>
           <textarea name="notes" placeholder='Notes' value={formFields.notes} onChange={handleChange}></textarea>
+
+          {/* Modal */}
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => setShowModal(true)}
+          >
+            Add New Friend
+          </button>
+          <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" style={{ display: showModal ? 'block' : 'none' }}>
+            <div className="modal-dialog" role="document" style={{ position: 'absolute', top: '600px', left: '50%', transform: 'translateX(-50%)' }}>
+              <div className="modal-content">
+                <div className="modal-header">
+                  <h5 className="modal-title" id="exampleModalLabel">New Friends</h5>
+                </div>
+                <div className="modal-body">
+                  <input type="text" name="new-field" value={newFriendName} onChange={e => setNewFriendName(e.target.value)} />
+                </div>
+                <div className="modal-footer">
+                  <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
+                  <button type="button" onClick={handleNewFriendSubmit} className="btn btn-primary">Save changes</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Submit */}
           <div className='btnCenter'>
             <button className="btn mb-4">Submit</button>
