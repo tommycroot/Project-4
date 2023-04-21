@@ -1,11 +1,17 @@
-// Bootstrap
 import { useState, useEffect } from 'react'
+import Select from 'react-select'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+
+import { authenticated, getPayload } from '../helpers/auth'
+
+
 const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSubmit }) => {
   const [clubOptions, setClubOptions] = useState([])
+  const [friends, setFriends] = useState([])
+  
 
   useEffect(() => {
     fetch('/api/club/')
@@ -14,8 +20,29 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
   }, [])
 
 
+
+  useEffect(() => {
+    const getFriends = async () => {
+      try {
+        console.log('PAYLOAD', getPayload())
+        const { data } = await authenticated.get('/api/friend/')
+        console.log('response', data)
+        setFriends(data)
+      } catch (err) {
+        console.log(err.message)
+      }
+    }
+    getFriends()
+  }, [])
+  
+
+
   const handleChange = (e) => {
-    setFormFields({ ...formFields, [e.target.name]: e.target.value })
+    if (e.target.name === 'friends') {
+      setFormFields({ ...formFields, [e.target.name]: Array.from(e.target.selectedOptions, option => option.value) })
+    } else {
+      setFormFields({ ...formFields, [e.target.name]: e.target.value })
+    }
     setError('')
   }
   
@@ -55,7 +82,6 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           <select name="competition" value={formFields.competition} onChange={handleChange}>
             <option value="">Select a Competition</option>
             <option value="Premier League">Premier League</option>
-            
           </select>
           {/* Goalscorers */}
           <label htmlFor="goalscorers">Goal Scorers</label>
@@ -69,9 +95,24 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           {/* Red Cards */}
           <label htmlFor="red_cards">Red Cards</label>
           <input name="red_cards" placeholder='Red Cards' value={formFields.red_cards} onChange={handleChange} />
-          {/* Red Cards */}
+          {/* Friends*/}
+          <label htmlFor="friends">Friends</label>
+          {friends && (
+            <Select
+              name='friends'
+              isMulti
+              value={formFields.friends}
+              options={friends.map(f => ({ value: f.id, label: f.name }))}
+              onChange={selected => {
+                console.log(selected)
+                setFormFields({ ...formFields, friends: selected })
+
+              }}
+            />
+          )}
+          {/* Notes */}
           <label htmlFor="notes">Notes</label>
-          <textarea name="notes" placeholder='Notes' value={formFields.notes} onChange={handleChange}></textarea>s
+          <textarea name="notes" placeholder='Notes' value={formFields.notes} onChange={handleChange}></textarea>
           {/* Submit */}
           <div className='btnCenter'>
             <button className="btn mb-4">Submit</button>

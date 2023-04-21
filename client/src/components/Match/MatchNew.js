@@ -25,6 +25,7 @@ const MatchNew = () => {
     yellow_cards: '',
     red_cards: '',
     notes: '',
+    friends: [],
   })
 
   const [ error, setError ] = useState('')
@@ -38,7 +39,12 @@ const MatchNew = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const { data } = await authenticated.post('/api/match/', formFields)
+      const formFieldsRefactored = {
+        ...formFields, 
+        friends: formFields.friends.map(friend => friend.value),
+      }
+      console.log(formFieldsRefactored)
+      const { data } = await authenticated.post('/api/match/', formFieldsRefactored)
       navigate(`/match/${data.id}`)
     } catch (err) {
       console.log(err)
