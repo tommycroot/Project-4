@@ -51,8 +51,15 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
   }
 
   const handleChange = (e) => {
-    setFormFields({ formFields: '2023/2024' })
-    console.log(formFields)
+    console.log(e)
+    if (Array.isArray(e)) {
+      setFormFields({ ...formFields, ['friends']: e })
+    } else if (e.target.name.includes('team')) {
+      setFormFields({ ...formFields, [e.target.name]: JSON.parse(e.target.value) })
+    } else {
+      setFormFields({ ...formFields, [e.target.name]: e.target.value })
+    }
+    setError('')
   }
 
   return (
@@ -72,15 +79,15 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           <input type="date" name="date" placeholder='Date' value={formFields.date} onChange={handleChange} />
           {/* Home Team */}
           <label htmlFor="home_team">Home Team</label>
-          <select name="home_team" value={formFields.home_team} onChange={handleChange}>
+          <select name="home_team"  onChange={handleChange}>
             <option value="">Select a Club</option>
-            {clubOptions.map(club => <option key={club.id} value={club.id}>{club.name}</option>)}
+            {clubOptions.map(club => <option key={club.id} value={JSON.stringify(club)}>{club.name}</option>)}
           </select>
           {/* Away Team */}
           <label htmlFor="away_team">Away Team</label>
-          <select name="away_team" value={formFields.away_team} onChange={handleChange}>
+          <select name="away_team" onChange={handleChange}>
             <option value="">Select a Club</option>
-            {clubOptions.map(club => <option key={club.id} value={club.id}>{club.name}</option>)}
+            {clubOptions.map(club => <option key={club.id} value={JSON.stringify(club)}>{club.name}</option>)}
           </select>
           {/* Result */}
           <label htmlFor="result">Result</label>

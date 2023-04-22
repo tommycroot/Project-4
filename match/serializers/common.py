@@ -5,8 +5,6 @@ from ..models import Match
 
 class MatchSerializer(ModelSerializer):
     friends = FriendSerializer(many=True)
-    home_team = ClubSerializer()
-    away_team = ClubSerializer()
     class Meta:
         model = Match
         fields = '__all__'
