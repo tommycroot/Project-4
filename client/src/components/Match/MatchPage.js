@@ -11,6 +11,7 @@ const MatchPage = ({ user }) => {
   const [match, setMatch] = useState(null)
   const [homeTeam, setHomeTeam] = useState(null)
   const [awayTeam, setAwayTeam] = useState(null)
+  const [friendsList, setFriendsList] = useState([])
   const { id } = useParams()
 
   const navigate = useNavigate()
@@ -30,6 +31,7 @@ const MatchPage = ({ user }) => {
       const { data: awayTeamData } = await authenticated.get(`/api/club/${matchData.away_team}/`)
       setAwayTeam(awayTeamData)
       console.log('away team', awayTeamData)
+
     }
     getData()
   }, [id])
@@ -75,6 +77,14 @@ const MatchPage = ({ user }) => {
               <h3><span>Assists:</span></h3> <p>{assists}</p>
               <h3><span>Yellow Cards:</span></h3> <p>{yellow_cards}</p>
               <h3><span>Red Cards:</span></h3> <p>{red_cards}</p>
+              <h3><span>Friends:</span></h3>
+              {friends && (
+                <ul>
+                  {friends.map((friend) => (
+                    <li key={friend.id}>{friend.name}</li>
+                  ))}
+                </ul>
+              )}
               <h3><span>Notes:</span></h3> <p>{notes}</p>
               {/* <h3><span>Profile:</span></h3>  <p> <Link to = {`api/profile/${owner.id}`} >{owner.username}</Link> </p> */}
             </div>
