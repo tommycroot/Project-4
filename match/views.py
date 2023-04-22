@@ -18,6 +18,7 @@ class MatchListView(APIView):
     @exceptions
     def post(self, request):
         match = MatchSerializer(data={ **request.data, 'owner': request.user.id })
+        print(request)
         match.is_valid(raise_exception=True)
         match.save()
         return Response(match.data, status.HTTP_201_CREATED)

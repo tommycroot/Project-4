@@ -51,14 +51,9 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
   }
 
   const handleChange = (e) => {
-    if (e.target.name === 'friends') {
-      setFormFields({ ...formFields, [e.target.name]: Array.from(e.target.selectedOptions, option => option.value) })
-    } else {
-      setFormFields({ ...formFields, [e.target.name]: e.target.value })
-    }
-    setError('')
+    setFormFields({ formFields: '2023/2024' })
+    console.log(formFields)
   }
-  
 
   return (
     <Container>
@@ -109,17 +104,13 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           <label htmlFor="red_cards">Red Cards</label>
           <input name="red_cards" placeholder='Red Cards' value={formFields.red_cards} onChange={handleChange} />
           {/* Friends*/}
-          <label htmlFor="friends">Friends</label>
+          <label name="friends" htmlFor="friends">Friends</label>
           {friends && (
             <Select
               name='friends'
               isMulti
-              value={formFields.friends}
-              options={friends.map(f => ({ value: f.id, label: f.name }))}
-              onChange={selected => {
-                console.log(selected)
-                setFormFields({ ...formFields, friends: selected })
-              }}              
+              options={friends.map(friend => ({ value: friend, label: friend.name, name: 'friends' }))}
+              onChange= {handleChange}            
             />
           )}
           {/* Notes */}

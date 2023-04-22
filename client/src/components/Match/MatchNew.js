@@ -16,8 +16,8 @@ const MatchNew = () => {
   const [ formFields, setFormFields ] = useState({
     season: '',
     date: '',
-    home_team: '',
-    away_team: '',
+    home_team: {},
+    away_team: {},
     result: '',
     competition: '',
     goalscorers: '',
@@ -39,12 +39,8 @@ const MatchNew = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      const formFieldsRefactored = {
-        ...formFields, 
-        friends: formFields.friends.map(friend => friend.value),
-      }
-      console.log(formFieldsRefactored)
-      const { data } = await authenticated.post('/api/match/', formFieldsRefactored)
+      console.log(formFields)
+      const { data } = await authenticated.post('/api/match/', formFields)
       navigate(`/match/${data.id}`)
     } catch (err) {
       console.log(err)
