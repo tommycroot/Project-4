@@ -9,9 +9,6 @@ import { userIsOwner, authenticated } from '../helpers/auth.js'
 const MatchPage = ({ user }) => {
   console.log('matchpage')
   const [match, setMatch] = useState(null)
-  const [homeTeam, setHomeTeam] = useState(null)
-  const [awayTeam, setAwayTeam] = useState(null)
-  const [friendsList, setFriendsList] = useState([])
   const { id } = useParams()
 
   const navigate = useNavigate()
@@ -24,13 +21,6 @@ const MatchPage = ({ user }) => {
       console.log('RESPONSE', matchData)
       setMatch(matchData)
 
-      const { data: homeTeamData } = await authenticated.get(`/api/club/${matchData.home_team}/`)
-      console.log('home team', homeTeamData)
-      setHomeTeam(homeTeamData)
-
-      const { data: awayTeamData } = await authenticated.get(`/api/club/${matchData.away_team}/`)
-      setAwayTeam(awayTeamData)
-      console.log('away team', awayTeamData)
 
     }
     getData()
@@ -38,10 +28,6 @@ const MatchPage = ({ user }) => {
 
   if (!userIsOwner(match)) {
     return <p>You are not authorized to view this match.</p>
-  }
-
-  if (!match || !homeTeam || !awayTeam) {
-    return <p>Loading...</p>
   }
 
   const { home_team, away_team, season, date, result, competition, goalscorers, assists, yellow_cards, red_cards, friends, photos, notes, owner } = match
@@ -61,7 +47,7 @@ const MatchPage = ({ user }) => {
       <Container>
         <Row className="item-row">
           <Col className='match-title'>
-            <h1>{homeTeam.name} vs {awayTeam.name}</h1>
+            <h1>{home_team.name} vs {away_team.name}</h1>
           </Col>
         </Row>
         <Row className="imageInfoRow">
@@ -70,7 +56,8 @@ const MatchPage = ({ user }) => {
           </Col>
           <Col md={6} className='matchInfo'>
             <div className='matchInfoText'>
-              <h3><span>Season:</span>{season}</h3> <p>{season}</p>
+              <h3><span>Season:</span>{season}</h3>
+              <h3><span>Date:</span>{date}</h3>
               <h3><span>Score:</span></h3> <p>{result}</p>
               <h3><span>Competition:</span></h3> <p>{competition}</p>
               <h3><span>Goalscorers:</span></h3> <p>{goalscorers}</p>

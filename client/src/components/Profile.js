@@ -15,7 +15,7 @@ const Profile = () => {
   console.log('PROFILE PAGE')
 
   const [matches, setMatches] = useState(null)
-  const [clubs, setClubs] = useState(null)
+  
 
   useEffect(() => {
     const getInfo = async () => {
@@ -31,22 +31,7 @@ const Profile = () => {
     getInfo()
   }, [])
 
-  useEffect(() => {
-    const getClubs = async () => {
-      try {
-        const { data } = await authenticated.get('/api/club/')
-        setClubs(data)
-      } catch (err) {
-        console.log(err.message)
-      }
-    }
-    getClubs()
-  }, [])
 
-  const getClubName = (id) => {
-    const club = clubs && clubs.find(club => club.id === id)
-    return club ? club.name : ''
-  }
 
   return (
     <main>
@@ -58,15 +43,13 @@ const Profile = () => {
           {
             matches && matches.map(match => {
               const { home_team, away_team, season, date, result, competition, goalscorers, assists, yellow_cards, red_cards, friends, photos, notes, owner, id } = match
-              const home_team_name = getClubName(home_team)
-              const away_team_name = getClubName(away_team)
               return (
                 <Col key={id} lg="4" md="6" sm="12" className='match'>
                   <Link to={`/match/${id}`}>
                     <Card>
                       <div className="card-image" ></div>
                       <Card.Body>
-                        <Card.Text>{home_team_name} vs {away_team_name} <span id="date">{date}</span> {result}</Card.Text>
+                        <Card.Text>{home_team.name} vs {away_team.name} <span id="date">{date}</span> {result}</Card.Text>
                       </Card.Body>
                     </Card>
                   </Link>
