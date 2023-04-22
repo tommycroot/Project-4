@@ -5,6 +5,7 @@ from rest_framework.permissions import IsAuthenticated
 from lib.exceptions import exceptions
 from .models import Match
 from .serializers.common import MatchSerializer
+from .serializers.post import MatchPostSerializer
 from rest_framework.exceptions import PermissionDenied
 
 class MatchListView(APIView):
@@ -17,7 +18,7 @@ class MatchListView(APIView):
     
     @exceptions
     def post(self, request):
-        match = MatchSerializer(data={ **request.data, 'owner': request.user.id })
+        match = MatchPostSerializer(data={ **request.data, 'owner': request.user.id })
         print(request)
         match.is_valid(raise_exception=True)
         match.save()
