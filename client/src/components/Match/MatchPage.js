@@ -58,7 +58,7 @@ const MatchPage = ({ user }) => {
             <div className='matchInfoText'>
               <h3><span>Season:</span>{season}</h3>
               <h3><span>Date:</span>{date}</h3>
-              <h3><span>Score:</span></h3> <p>{result}</p>
+              <h3><span>Score:</span>{result}</h3>
               <h3><span>Competition:</span></h3> <p>{competition}</p>
               <h3><span>Goalscorers:</span></h3> <p>{goalscorers}</p>
               <h3><span>Assists:</span></h3> <p>{assists}</p>

@@ -1,6 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
-import axios from 'axios'
+
 
 // Custom functions
 import { authenticated, isAuthenticated, userIsOwner } from '../helpers/auth.js'
@@ -19,8 +19,8 @@ const MatchEdit = () => {
   const [ formFields, setFormFields ] = useState({
     season: '',
     date: '',
-    home_team: '',
-    away_team: '',
+    home_team: {},
+    away_team: {},
     result: '',
     competition: '',
     goalscorers: '',
@@ -36,11 +36,11 @@ const MatchEdit = () => {
   useEffect(() => {
     const getMatchInfo = async () => {
       const { data } = await authenticated.get(`/api/match/${id}/`)
-      console.log('Match DATA', data)
       setMatch(data)
     }
     getMatchInfo()
   }, [id])
+
 
   // ! On Mount
 
@@ -52,8 +52,10 @@ const MatchEdit = () => {
         if (!isAuthenticated() || !userIsOwner(data)) navigate(`/match/${id}/`)
         console.log('Not Authenticated', !isAuthenticated())
         console.log('Not Owner', !userIsOwner(data))
-        console.log('Match', data)
-        setFormFields(data)
+        const newMatch = { ...data, home_team: data.home_team.name, away_team: data.away_team.name }
+        console.log('New Match Data', newMatch)
+        setFormFields(newMatch)
+        
       } catch (err) {
         console.log(err)
       }
@@ -67,8 +69,13 @@ const MatchEdit = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      await authenticated.put(`/api/match/${id}/`, formFields)
-      navigate(`/match/${id}/`)
+      const formFieldsRefact = {
+        ...formFields, 
+        friends: formFields.friends.map(friend => friend.value),
+      }
+      console.log(formFieldsRefact)
+      const { data } = await authenticated.post('/api/match/', formFieldsRefact)
+      navigate(`/match/${data.id}`)
     } catch (err) {
       console.log(err)
       setError(err.response.data.message)

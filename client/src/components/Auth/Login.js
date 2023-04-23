@@ -32,7 +32,7 @@ const Login = () => {
       localStorage.setItem('FOOTY-TOKEN', data.token)
       console.log('DATA TOKEN', data.token)
       axios.defaults.headers.common['Authorization'] = `Bearer ${data.token}`
-      navigate('/')
+      navigate('/profile')
     } catch (err) {
       console.log('error', err)
       setError(err.response.data.message)

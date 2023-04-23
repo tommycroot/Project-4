@@ -38,7 +38,7 @@ class MatchDetailView(APIView):
     @exceptions
     def put(self, request, pk):
         match = Match.objects.get(pk=pk)
-        serialized_match = MatchSerializer(match, request.data, partial=True)
+        serialized_match = MatchPostSerializer(match, request.data, partial=True)
         serialized_match.is_valid(raise_exception=True)
         serialized_match.save()
         return Response(serialized_match.data)

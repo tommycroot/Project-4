@@ -12,12 +12,23 @@ body {
 }
 
 .home{
-  width: 800px;
+  width: 100%;
+  
+  
+  
   
 }
 .hero{
+  margin-top: 30px;
   background-image: url(https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/136156/Fans_clapping.jpg);
-  min-height: 600px;
+  height: 100vh;
+  width: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
 
 h1 {
@@ -40,13 +51,14 @@ span {
 }
 .nav {
   max-width: 1320px;
+  padding: 20px;
   margin: 0 auto;
   margin-top: 10px;
   display: flex;
   justify-content: space-evenly;
+  width: 100vh !important;
     
     .nav-item{
-      margin-right: 50px;
       width: 160px;
       text-align: center;
     
@@ -60,14 +72,27 @@ span {
         }
       }
     }
-  
 }
 
+
+
 .container {
-  width: 600px;
+  width: 100vh;
   margin: 0 auto;
 }
 
+.filters {
+  display: flex;
+  width: 100vh !important;
+  margin: 0 auto;
+}
+
+select{
+  height:20px;
+  margin-top: 14px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 
 .form-page {  
   form {

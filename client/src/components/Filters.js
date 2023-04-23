@@ -1,4 +1,8 @@
 import { useEffect, useState } from 'react'
+import Nav from 'react-bootstrap/Nav'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 const Filters = ({ matches, setFilteredMatches }) => {
 
@@ -36,33 +40,39 @@ const Filters = ({ matches, setFilteredMatches }) => {
   awayTeamNames.unshift('All')
 
   return (
-    <section className="filters">
-      {/* Season dropdown */}
-      <select name="season" value={filters.season} onChange={handleChange}>
-        <option value="All">All</option>
-        { matches && 
-          [...new Set(matches.map(match => match.season))].sort().map(season => {
-            return <option key={season} value={season}>{season}</option>
-          })}
-      </select>
+    <Container>
+      <Row>
+        <Col md={6} className='text-center'>
+          <section className="filters">
+            {/* Season dropdown */}
+            <p>Season</p>
+            <select name="season" value={filters.season} onChange={handleChange}>
+              <option value="All">All</option>
+              { matches && 
+                [...new Set(matches.map(match => match.season))].sort().map(season => {
+                  return <option key={season} value={season}>{season}</option>
+                })}
+            </select>
 
-      {/* Home team dropdown */}
-      <select name="homeTeam" value={filters.homeTeam} onChange={handleChange}>
-        {homeTeamNames.map((teamName) => (
-          <option key={teamName} value={teamName}>{teamName}</option>
-        ))}
-      </select>
+            {/* Home team dropdown */}
+            <p>Home Team</p>
+            <select name="homeTeam" value={filters.homeTeam} onChange={handleChange}>
+              {homeTeamNames.map((teamName) => (
+                <option key={teamName} value={teamName}>{teamName}</option>
+              ))}
+            </select>
 
-      {/* Away team dropdown */}
-      <select name="awayTeam" value={filters.awayTeam} onChange={handleChange}>
-        {awayTeamNames.map((teamName) => (
-          <option key={teamName} value={teamName}>{teamName}</option>
-        ))}
-      </select>
-
-      {/* Search input */}
-      <input type="text" name="search" placeholder='Search...' onChange={handleChange} value={filters.search} />
-    </section>
+            {/* Away team dropdown */}
+            <p>Away Team</p>
+            <select name="awayTeam" value={filters.awayTeam} onChange={handleChange}>
+              {awayTeamNames.map((teamName) => (
+                <option key={teamName} value={teamName}>{teamName}</option>
+              ))}
+            </select>
+          </section>
+        </Col>
+      </Row>
+    </Container>
   )
   
 }

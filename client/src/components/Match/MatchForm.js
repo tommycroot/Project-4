@@ -52,15 +52,14 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
 
   const handleChange = (e) => {
     console.log(e)
-    if (Array.isArray(e)) {
-      setFormFields({ ...formFields, ['friends']: e })
-    } else if (e.target.name.includes('team')) {
-      setFormFields({ ...formFields, [e.target.name]: JSON.parse(e.target.value) })
+    if (e.target.name === 'friends') {
+      setFormFields({ ...formFields, [e.target.name]: Array.from(e.target.selectedOptions, option => option.value) })
     } else {
       setFormFields({ ...formFields, [e.target.name]: e.target.value })
     }
     setError('')
   }
+  
 
   return (
     <Container>
@@ -77,17 +76,16 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           {/* Date */}
           <label htmlFor="date">Date</label>
           <input type="date" name="date" placeholder='Date' value={formFields.date} onChange={handleChange} />
-          {/* Home Team */}
           <label htmlFor="home_team">Home Team</label>
-          <select name="home_team"  onChange={handleChange}>
+          <select name="home_team" value={formFields.home_team} onChange={handleChange}>
             <option value="">Select a Club</option>
-            {clubOptions.map(club => <option key={club.id} value={JSON.stringify(club)}>{club.name}</option>)}
+            {clubOptions.map(club => <option key={club.id} value={club.id}>{club.name}</option>)}
           </select>
           {/* Away Team */}
           <label htmlFor="away_team">Away Team</label>
-          <select name="away_team" onChange={handleChange}>
+          <select name="away_team" value={formFields.away_team} onChange={handleChange}>
             <option value="">Select a Club</option>
-            {clubOptions.map(club => <option key={club.id} value={JSON.stringify(club)}>{club.name}</option>)}
+            {clubOptions.map(club => <option key={club.id} value={club.id}>{club.name}</option>)}
           </select>
           {/* Result */}
           <label htmlFor="result">Result</label>
@@ -111,13 +109,17 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
           <label htmlFor="red_cards">Red Cards</label>
           <input name="red_cards" placeholder='Red Cards' value={formFields.red_cards} onChange={handleChange} />
           {/* Friends*/}
-          <label name="friends" htmlFor="friends">Friends</label>
+          <label htmlFor="friends">Friends</label>
           {friends && (
             <Select
               name='friends'
               isMulti
-              options={friends.map(friend => ({ value: friend, label: friend.name, name: 'friends' }))}
-              onChange= {handleChange}            
+              value={formFields.friends}
+              options={friends.map(f => ({ value: f.id, label: f.name }))}
+              onChange={selected => {
+                console.log(selected)
+                setFormFields({ ...formFields, friends: selected })
+              }}              
             />
           )}
           {/* Notes */}

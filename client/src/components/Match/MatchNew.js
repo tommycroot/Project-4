@@ -39,8 +39,12 @@ const MatchNew = () => {
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      console.log(formFields)
-      const { data } = await authenticated.post('/api/match/', formFields)
+      const formFieldsRefact = {
+        ...formFields, 
+        friends: formFields.friends.map(friend => friend.value),
+      }
+      console.log(formFieldsRefact)
+      const { data } = await authenticated.post('/api/match/', formFieldsRefact)
       navigate(`/match/${data.id}`)
     } catch (err) {
       console.log(err)
