@@ -43,7 +43,7 @@ const Register = () => {
       <Container>
         <Row>
           <Col as="form" xs={{ span: 10, offset: 1 }} sm={{ span: 8, offset: 2 }} md={{ span: 6, offset: 3 }} onSubmit={handleSubmit}>
-            <h1 className='display-6 text-center'>Register</h1>
+            <h1 id="register" className='display-6 text-center'>Register</h1>
             {/* Username */}
             <label htmlFor="username">Username</label>
             <input type="text" name="username" placeholder='Username' onChange={handleChange} value={formFields.username} />
@@ -56,15 +56,13 @@ const Register = () => {
             {/* Password Confirmation */}
             <label htmlFor="password_confirmation">Password Confirmation</label>
             <input type="password" name="password_confirmation" placeholder='Password Confirmation' onChange={handleChange} value={formFields.password_confirmation} />
-            {/* Profile Image */}
-            <label htmlFor="profile_image">Profile Image</label>
-            <input type="text" name="profile_image" placeholder='Profile Image' onChange={handleChange} value={formFields.profile_image} />
+            {/* Error */}
+            {error && <p className='text-danger text-center'>{error}</p>}
             {/* Submit */}
             <div className='btnCenter'>
               <button className='btn mb-4'>Register</button>
             </div>
-            {/* Error */}
-            {error && <p className='text-danger text-center'>{error}</p>}
+            
           </Col>
         </Row>
       </Container>

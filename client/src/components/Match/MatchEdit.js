@@ -52,7 +52,7 @@ const MatchEdit = () => {
         if (!isAuthenticated() || !userIsOwner(data)) navigate(`/match/${id}/`)
         console.log('Not Authenticated', !isAuthenticated())
         console.log('Not Owner', !userIsOwner(data))
-        const newMatch = { ...data, home_team: data.home_team.name, away_team: data.away_team.name }
+        const newMatch = { ...data, home_team: data.home_team.id, away_team: data.away_team.id, friends: Array.from(data.friends, friend=> friend.value && friend.name) }
         console.log('New Match Data', newMatch)
         setFormFields(newMatch)
         

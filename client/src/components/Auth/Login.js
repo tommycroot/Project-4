@@ -44,7 +44,7 @@ const Login = () => {
       <Container>
         <Row>
           <Col as="form" xs={{ span: 10, offset: 1 }} sm={{ span: 8, offset: 2 }} md={{ span: 6, offset: 3 }} onSubmit={handleSubmit}>
-            <h1 className='display-6 text-center'>Login</h1>
+            <h1 id="login" className='display-6 text-center'>Login</h1>
             <label htmlFor="email">Email</label>
             <input type="email" name="email" placeholder='Email' onChange={handleChange} value={formFields.email} />
             <label htmlFor="password">Password</label>

@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, Link, useNavigate } from 'react-router-dom'
-
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { userIsOwner, authenticated } from '../helpers/auth.js'
+import Spinner from '../Spinner.js'
 
 const MatchPage = ({ user }) => {
   console.log('matchpage')
@@ -27,7 +27,7 @@ const MatchPage = ({ user }) => {
   }, [id])
 
   if (!userIsOwner(match)) {
-    return <p>You are not authorized to view this match.</p>
+    return <Spinner />
   }
 
   const { home_team, away_team, season, date, result, competition, goalscorers, assists, yellow_cards, red_cards, friends, photos, notes, owner } = match
@@ -56,27 +56,25 @@ const MatchPage = ({ user }) => {
           </Col>
           <Col md={6} className='matchInfo'>
             <div className='matchInfoText'>
-              <h3><span>Season:</span>{season}</h3>
-              <h3><span>Date:</span>{date}</h3>
-              <h3><span>Score:</span>{result}</h3>
-              <h3><span>Competition:</span></h3> <p>{competition}</p>
-              <h3><span>Goalscorers:</span></h3> <p>{goalscorers}</p>
-              <h3><span>Assists:</span></h3> <p>{assists}</p>
-              <h3><span>Yellow Cards:</span></h3> <p>{yellow_cards}</p>
-              <h3><span>Red Cards:</span></h3> <p>{red_cards}</p>
-              <h3><span>Friends:</span></h3>
-              {friends && (
+              <h3>Season:<span>{season}</span></h3>
+              <h3>Date:<span>{date}</span></h3>
+              <h3>Score:<span>{result}</span></h3>
+              <h3>Competition:<span>{competition}</span></h3>
+              <h3>Goalscorers:<span>{goalscorers}</span></h3> 
+              <h3>Assists:<span>{assists}</span></h3> 
+              <h3>Yellow Cards:<span>{yellow_cards}</span></h3>
+              <h3>Red Cards:<span>{red_cards}</span></h3>
+              <h3>Friends:<span>{friends && (
                 <ul>
                   {friends.map((friend) => (
                     <li key={friend.id}>{friend.name}</li>
                   ))}
                 </ul>
-              )}
-              <h3><span>Notes:</span></h3> <p>{notes}</p>
-              {/* <h3><span>Profile:</span></h3>  <p> <Link to = {`api/profile/${owner.id}`} >{owner.username}</Link> </p> */}
+              )}</span></h3>
+              <h3>Notes:<span>{notes}</span></h3>
             </div>
-            {userIsOwner(match) && <div><Link to={`/match/${id}/edit`} className='editItem'>Edit Match</Link></div>}
-            {userIsOwner(match) && <div><Link className='deleteItem' onClick={handleDelete}>Delete Match</Link></div>}
+            {userIsOwner(match) && <div className='editItem'><Link id="edit" to={`/match/${id}/edit`}>Edit Match</Link></div>}
+            {userIsOwner(match) && <div><Link className='text-danger' onClick={handleDelete}>Delete Match</Link></div>}
           </Col>
         </Row>
       </Container>

@@ -65,36 +65,46 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
     <Container>
       <Row>
         <Col as="form" xs={{ span: 10, offset: 1 }} sm={{ span: 8, offset: 2 }} md={{ span: 6, offset: 3 }} onSubmit={handleSubmit}>
-          <h1 className='display-6 text-center'>{title}</h1>
+          <h1 id='formH1' className='display-6 text-center'>{title}</h1>
           {/* Season */}
-          <label htmlFor="season">Season</label>
-          <select name="season" value={formFields.season} onChange={handleChange}>
-            <option value="">Select a Season</option>
+          <div>
+            <label htmlFor="season">Season<span id="required">*Required</span></label>
+          </div>
+          <select className="selectForm" name="season" value={formFields.season} onChange={handleChange}>
+            <option value="">Select a Season</option> 
+            <option value="2020/2021">2020/2021</option>
+            <option value="2021/2022">2021/2022</option>
+            <option value="2021/2022">2021/2022</option>
             <option value="2022/2023">2022/2023</option>
             <option value="2023/2024">2023/2024</option>
+            <option value="2024/2025">2024/2025</option>
+            <option value="2025/2026">2025/2026</option>
           </select>
           {/* Date */}
-          <label htmlFor="date">Date</label>
+          <label htmlFor="date">Date<span id="required">*Required</span></label>
           <input type="date" name="date" placeholder='Date' value={formFields.date} onChange={handleChange} />
-          <label htmlFor="home_team">Home Team</label>
-          <select name="home_team" value={formFields.home_team} onChange={handleChange}>
+          <label htmlFor="home_team">Home Team<span id="required">*Required</span></label>
+          <select className="selectForm" name="home_team" value={formFields.home_team} onChange={handleChange}>
             <option value="">Select a Club</option>
             {clubOptions.map(club => <option key={club.id} value={club.id}>{club.name}</option>)}
           </select>
           {/* Away Team */}
-          <label htmlFor="away_team">Away Team</label>
-          <select name="away_team" value={formFields.away_team} onChange={handleChange}>
+          <label htmlFor="away_team">Away Team<span id="required">*Required</span></label>
+          <select className="selectForm" name="away_team" value={formFields.away_team} onChange={handleChange}>
             <option value="">Select a Club</option>
             {clubOptions.map(club => <option key={club.id} value={club.id}>{club.name}</option>)}
           </select>
           {/* Result */}
-          <label htmlFor="result">Result</label>
+          <label htmlFor="result">Score<span id="required">*Required</span></label>
           <input type="text" name="result" placeholder='Result' value={formFields.result} onChange={handleChange} />
           {/* Competiton */}
-          <label htmlFor="competition">Competiton</label>
-          <select name="competition" value={formFields.competition} onChange={handleChange}>
+          <label htmlFor="competition">Competiton<span id="required">*Required</span></label>
+          <select className="selectForm" name="competition" value={formFields.competition} onChange={handleChange}>
             <option value="">Select a Competition</option>
             <option value="Premier League">Premier League</option>
+            <option value="Championship">EFL Championship</option>
+            <option value="League One">EFL League One</option>
+            <option value="League Two">EFL League Two</option>
           </select>
           {/* Goalscorers */}
           <label htmlFor="goalscorers">Goal Scorers</label>
@@ -122,9 +132,6 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
               }}              
             />
           )}
-          {/* Notes */}
-          <label htmlFor="notes">Notes</label>
-          <textarea name="notes" placeholder='Notes' value={formFields.notes} onChange={handleChange}></textarea>
 
           {/* Modal */}
           <button
@@ -138,18 +145,22 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
             <div className="modal-dialog" role="document" style={{ position: 'absolute', top: '600px', left: '50%', transform: 'translateX(-50%)' }}>
               <div className="modal-content">
                 <div className="modal-header">
-                  <h5 className="modal-title" id="exampleModalLabel">New Friends</h5>
+                  <h5 className="modal-title" id="exampleModalLabel">Add Friend</h5>
                 </div>
                 <div className="modal-body">
-                  <input type="text" name="new-field" value={newFriendName} onChange={e => setNewFriendName(e.target.value)} />
+                  <input type="text" name="new-field" placeholder='Friend Name' value={newFriendName} onChange={e => setNewFriendName(e.target.value)} />
                 </div>
                 <div className="modal-footer">
+                  <button type="button" onClick={handleNewFriendSubmit} className="btn btn-primary">Save New Friend</button>
                   <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
-                  <button type="button" onClick={handleNewFriendSubmit} className="btn btn-primary">Save changes</button>
+                  
                 </div>
               </div>
             </div>
           </div>
+          {/* Notes */}
+          <label htmlFor="notes" className="notes">Notes</label>
+          <textarea name="notes" placeholder='Notes' value={formFields.notes} onChange={handleChange}></textarea>
 
           {/* Submit */}
           <div className='btnCenter'>

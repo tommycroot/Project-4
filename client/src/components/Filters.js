@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Nav from 'react-bootstrap/Nav'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
@@ -29,14 +28,10 @@ const Filters = ({ matches, setFilteredMatches }) => {
     setFilteredMatches(newFilteredMatches)
   }, [filters, matches])
 
-  // Generate a list of unique home team names
   const homeTeamNames = [...new Set(matches.map(match => match.home_team.name))].sort()
-  // Add an "All" option to the beginning of the list
   homeTeamNames.unshift('All')
 
-  // Generate a list of unique away team names
   const awayTeamNames = [...new Set(matches.map(match => match.away_team.name))].sort()
-  // Add an "All" option to the beginning of the list
   awayTeamNames.unshift('All')
 
   return (
