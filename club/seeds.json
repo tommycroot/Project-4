@@ -1,0 +1,912 @@
+[
+  {
+    "model": "club.club",
+    "pk": 1,
+    "fields": {
+      "name": "Accrington Stanley",
+      "stadium": "Wham Stadium",
+      "club_image": "http://accringtonstanley.jpg",
+      "stadium_image": "http://wham.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 2,
+    "fields": {
+      "name": "AFC Bournemouth",
+      "stadium": "Vitality Stadium",
+      "club_image": "http://bournemouth.jpg",
+      "stadium_image": "http://vitality.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 3,
+    "fields": {
+      "name": "AFC Wimbledon",
+      "stadium": "Plough Lane",
+      "club_image": "http://afcwimbledon.jpg",
+      "stadium_image": "http://ploughlane.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 4,
+    "fields": {
+      "name": "Arsenal FC",
+      "stadium": "Emirates Stadium",
+      "club_image": "http://arsenal.jpg",
+      "stadium_image": "http://emirates.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 5,
+    "fields": {
+      "name": "Aston Villa",
+      "stadium": "Villa Park",
+      "club_image": "http://villa.jpg",
+      "stadium_image": "http://villapark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 6,
+    "fields": {
+      "name": "Barnsley",
+      "stadium": "Oakwell",
+      "club_image": "http://barnsley.jpg",
+      "stadium_image": "http://oakwell.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 7,
+    "fields": {
+      "name": "Barrow",
+      "stadium": "Holker Street",
+      "club_image": "http://barrow.jpg",
+      "stadium_image": "http://holkerstreet.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 8,
+    "fields": {
+      "name": "Birmingham City",
+      "stadium": "St Andrew's",
+      "club_image": "http://birmingham.jpg",
+      "stadium_image": "http://standrews.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 9,
+    "fields": {
+      "name": "Blackburn Rovers",
+      "stadium": "Ewood Park",
+      "club_image": "http://blackburn.jpg",
+      "stadium_image": "http://ewood.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 10,
+    "fields": {
+      "name": "Blackpool",
+      "stadium": "Bloomfield Road",
+      "club_image": "http://blackpool.jpg",
+      "stadium_image": "http://bloomfield.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 11,
+    "fields": {
+      "name": "Bolton Wanderers",
+      "stadium": "University of Bolton Stadium",
+      "club_image": "http://bolton.jpg",
+      "stadium_image": "http://universityofboltonstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 12,
+    "fields": {
+      "name": "Bradford City",
+      "stadium": "Utilita Energy Stadium",
+      "club_image": "http://bradford.jpg",
+      "stadium_image": "http://utilitaenergystadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 13,
+    "fields": {
+      "name": "Brentford",
+      "stadium": "Brentford Community Stadium",
+      "club_image": "http://brentford.jpg",
+      "stadium_image": "http://brentfordcommunity.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 14,
+    "fields": {
+      "name": "Brighton & Hove Albion",
+      "stadium": "Falmer Stadium",
+      "club_image": "http://brighton.jpg",
+      "stadium_image": "http://falmer.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 15,
+    "fields": {
+      "name": "Bristol City",
+      "stadium": "Ashton Gate Stadium",
+      "club_image": "http://bristolcity.jpg",
+      "stadium_image": "http://ashtongate.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 16,
+    "fields": {
+      "name": "Burnley FC",
+      "stadium": "Turf Moor",
+      "club_image": "http://burnley.jpg",
+      "stadium_image": "http://turfmoor.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 17,
+    "fields": {
+      "name": "Burton Albion",
+      "stadium": "Pirelli Stadium",
+      "club_image": "http://burton.jpg",
+      "stadium_image": "http://pirelli.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 18,
+    "fields": {
+      "name": "Cambridge United",
+      "stadium": "Abbey Stadium",
+      "club_image": "http://cambridge.jpg",
+      "stadium_image": "http://abbey.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 19,
+    "fields": {
+      "name": "Cardiff City",
+      "stadium": "Cardiff City Stadium",
+      "club_image": "http://cardiff.jpg",
+      "stadium_image": "http://cardiffcitystadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 20,
+    "fields": {
+      "name": "Carlisle United",
+      "stadium": "Brunton Park",
+      "club_image": "http://carlisle.jpg",
+      "stadium_image": "http://brunton.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 21,
+    "fields": {
+      "name": "Charlton Athletic",
+      "stadium": "The Valley",
+      "club_image": "http://charlton.jpg",
+      "stadium_image": "http://thevalley.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 22,
+    "fields": {
+      "name": "Chelsea",
+      "stadium": "Stamford Bridge",
+      "club_image": "http://chelsea.jpg",
+      "stadium_image": "http://stamfordbridge.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 23,
+    "fields": {
+      "name": "Cheltenham Town",
+      "stadium": "Whaddon Road",
+      "club_image": "http://cheltenham.jpg",
+      "stadium_image": "http://whaddonroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 24,
+    "fields": {
+      "name": "Colchester United",
+      "stadium": "JobServe Community Stadium",
+      "club_image": "http://colchester.jpg",
+      "stadium_image": "http://jobservestadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 25,
+    "fields": {
+      "name": "Coventry City",
+      "stadium": "St Andrew's Trillion Trophy Stadium",
+      "club_image": "http://coventry.jpg",
+      "stadium_image": "http://standrews.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 26,
+    "fields": {
+      "name": "Crawley Town",
+      "stadium": "People's Pension Stadium",
+      "club_image": "http://crawley.jpg",
+      "stadium_image": "http://peoplespensionstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 27,
+    "fields": {
+      "name": "Crewe Alexandra",
+      "stadium": "Gresty Road",
+      "club_image": "http://crewe.jpg",
+      "stadium_image": "http://grestyroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 28,
+    "fields": {
+      "name": "Crystal Palace",
+      "stadium": "Selhurst Park",
+      "club_image": "http://crystalpalace.jpg",
+      "stadium_image": "http://selhurstpark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 29,
+    "fields": {
+      "name": "Derby County",
+      "stadium": "Pride Park Stadium",
+      "club_image": "http://derby.jpg",
+      "stadium_image": "http://pridepark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 30,
+    "fields": {
+      "name": "Doncaster Rovers",
+      "stadium": "Keepmoat Stadium",
+      "club_image": "http://doncasterrovers.jpg",
+      "stadium_image": "http://keepmoat.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 31,
+    "fields": {
+      "name": "Everton",
+      "stadium": "Goodison Park",
+      "club_image": "http://everton.jpg",
+      "stadium_image": "http://goodisonpark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 32,
+    "fields": {
+      "name": "Exeter City",
+      "stadium": "St James Park",
+      "club_image": "http://exetercity.jpg",
+      "stadium_image": "http://stjamespark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 33,
+    "fields": {
+      "name": "Fleetwood Town",
+      "stadium": "Highbury Stadium",
+      "club_image": "http://fleetwoodtown.jpg",
+      "stadium_image": "http://highbury.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 34,
+    "fields": {
+      "name": "Forest Green Rovers",
+      "stadium": "The New Lawn",
+      "club_image": "http://forestgreenrovers.jpg",
+      "stadium_image": "http://thenewlawn.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 35,
+    "fields": {
+      "name": "Fulham",
+      "stadium": "Craven Cottage",
+      "club_image": "http://fulham.jpg",
+      "stadium_image": "http://cravencottage.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 36,
+    "fields": {
+      "name": "Gillingham FC",
+      "stadium": "Priestfield Stadium",
+      "club_image": "http://gillingham.jpg",
+      "stadium_image": "http://priestfield.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 37,
+    "fields": {
+      "name": "Grimsby Town",
+      "stadium": "Blundell Park",
+      "club_image": "http://grimsby.jpg",
+      "stadium_image": "http://blundellpark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 38,
+    "fields": {
+      "name": "Harrogate Town",
+      "stadium": "Wetherby Road",
+      "club_image": "http://harrogatetown.jpg",
+      "stadium_image": "http://wetherbyroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 39,
+    "fields": {
+      "name": "Hartlepool United",
+      "stadium": "Victoria Park",
+      "club_image": "http://hartlepoolunited.jpg",
+      "stadium_image": "http://victoriapark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 40,
+    "fields": {
+      "name": "Huddersfield Town",
+      "stadium": "John Smith's Stadium",
+      "club_image": "http://huddersfield.jpg",
+      "stadium_image": "http://johnsmithsstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 41,
+    "fields": {
+      "name": "Hull City",
+      "stadium": "KCOM Stadium",
+      "club_image": "http://hull.jpg",
+      "stadium_image": "http://kcomstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 42,
+    "fields": {
+      "name": "Ipswich Town",
+      "stadium": "Portman Road",
+      "club_image": "http://ipswichtown.jpg",
+      "stadium_image": "http://portmanroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 43,
+    "fields": {
+      "name": "Leeds United",
+      "stadium": "Elland Road",
+      "club_image": "http://leeds.jpg",
+      "stadium_image": "http://ellandroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 44,
+    "fields": {
+      "name": "Leicester City",
+      "stadium": "King Power Stadium",
+      "club_image": "http://leicester.jpg",
+      "stadium_image": "http://kingpowerstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 45,
+    "fields": {
+      "name": "Leyton Orient",
+      "stadium": "Brisbane Road",
+      "club_image": "http://leytonorient.jpg",
+      "stadium_image": "http://brisbane.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 46,
+    "fields": {
+      "name": "Lincoln City",
+      "stadium": "LNER Stadium",
+      "club_image": "http://lincolncity.jpg",
+      "stadium_image": "http://lner.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 47,
+    "fields": {
+      "name": "Liverpool",
+      "stadium": "Anfield",
+      "club_image": "http://liverpool.jpg",
+      "stadium_image": "http://anfield.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 48,
+    "fields": {
+      "name": "Luton Town",
+      "stadium": "Kenilworth Road",
+      "club_image": "http://lutontown.jpg",
+      "stadium_image": "http://kenilworthroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 49,
+    "fields": {
+      "name": "Manchester City",
+      "stadium": "Etihad Stadium",
+      "club_image": "http://mancity.jpg",
+      "stadium_image": "http://etihadstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 50,
+    "fields": {
+      "name": "Manchester United",
+      "stadium": "Old Trafford",
+      "club_image": "http://manutd.jpg",
+      "stadium_image": "http://oldtrafford.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 51,
+    "fields": {
+      "name": "Mansfield Town",
+      "stadium": "Field Mill",
+      "club_image": "http://mansfieldtown.jpg",
+      "stadium_image": "http://fieldmill.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 52,
+    "fields": {
+      "name": "Middlesbrough",
+      "stadium": "Riverside Stadium",
+      "club_image": "http://middlesbrough.jpg",
+      "stadium_image": "http://riverside.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 53,
+    "fields": {
+      "name": "Millwall",
+      "stadium": "The Den",
+      "club_image": "http://millwall.jpg",
+      "stadium_image": "http://theden.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 54,
+    "fields": {
+      "name": "Milton Keynes Dons",
+      "stadium": "Stadium MK",
+      "club_image": "http://mkdons.jpg",
+      "stadium_image": "http://stadiummk.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 55,
+    "fields": {
+      "name": "Morecambe",
+      "stadium": "Globe Arena",
+      "club_image": "http://morecambe.jpg",
+      "stadium_image": "http://globearena.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 56,
+    "fields": {
+      "name": "Newcastle United",
+      "stadium": "St James' Park",
+      "club_image": "http://newcastleunited.jpg",
+      "stadium_image": "http://stjamespark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 57,
+    "fields": {
+      "name": "Newport County",
+      "stadium": "Rodney Parade",
+      "club_image": "http://newportcounty.jpg",
+      "stadium_image": "http://rodneyparade.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 58,
+    "fields": {
+      "name": "Northampton Town",
+      "stadium": "Sixfields Stadium",
+      "club_image": "http://northamptontown.jpg",
+      "stadium_image": "http://sixfields.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 59,
+    "fields": {
+      "name": "Norwich City",
+      "stadium": "Carrow Road",
+      "club_image": "http://norwichcity.jpg",
+      "stadium_image": "http://carrowroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 60,
+    "fields": {
+      "name": "Nottingham Forest",
+      "stadium": "The City Ground",
+      "club_image": "http://nottinghamforest.jpg",
+      "stadium_image": "http://cityground.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 61,
+    "fields": {
+      "name": "Oxford United",
+      "stadium": "Kassam Stadium",
+      "club_image": "http://oxfordunited.jpg",
+      "stadium_image": "http://kassam.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 62,
+    "fields": {
+      "name": "Peterborough United",
+      "stadium": "Weston Homes Stadium",
+      "club_image": "http://peterboroughunited.jpg",
+      "stadium_image": "http://westonhomes.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 63,
+    "fields": {
+      "name": "Plymouth Argyle",
+      "stadium": "Home Park",
+      "club_image": "http://plymouthargyle.jpg",
+      "stadium_image": "http://homepark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 64,
+    "fields": {
+      "name": "Port Vale",
+      "stadium": "Vale Park",
+      "club_image": "http://portvale.jpg",
+      "stadium_image": "http://valepark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 65,
+    "fields": {
+      "name": "Portsmouth",
+      "stadium": "Fratton Park",
+      "club_image": "http://portsmouth.jpg",
+      "stadium_image": "http://frattonpark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 66,
+    "fields": {
+      "name": "Preston North End",
+      "stadium": "Deepdale",
+      "club_image": "http://prestonnorthend.jpg",
+      "stadium_image": "http://deepdale.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 67,
+    "fields": {
+      "name": "Queens Park Rangers",
+      "stadium": "Kiyan Prince Foundation Stadium",
+      "club_image": "http://qpr.jpg",
+      "stadium_image": "http://kiyanprince.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 68,
+    "fields": {
+      "name": "Reading",
+      "stadium": "Madejski Stadium",
+      "club_image": "http://reading.jpg",
+      "stadium_image": "http://madejski.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 69,
+    "fields": {
+      "name": "Rochdale",
+      "stadium": "Crown Oil Arena",
+      "club_image": "http://rochdale.jpg",
+      "stadium_image": "http://crownoilarena.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 70,
+    "fields": {
+      "name": "Rotherham United",
+      "stadium": "New York Stadium",
+      "club_image": "http://rotherhamunited.jpg",
+      "stadium_image": "http://newyork.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 71,
+    "fields": {
+      "name": "Salford City",
+      "stadium": "Peninsula Stadium",
+      "club_image": "http://salfordcity.jpg",
+      "stadium_image": "http://peninsula.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 72,
+    "fields": {
+      "name": "Sheffield United",
+      "stadium": "Bramall Lane",
+      "club_image": "http://sheffieldunited.jpg",
+      "stadium_image": "http://bramalllane.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 73,
+    "fields": {
+      "name": "Sheffield Wednesday",
+      "stadium": "Hillsborough Stadium",
+      "club_image": "http://sheffieldwednesday.jpg",
+      "stadium_image": "http://hillsborough.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 74,
+    "fields": {
+      "name": "Shrewsbury Town",
+      "stadium": "Montgomery Waters Meadow",
+      "club_image": "http://shrewsburytown.jpg",
+      "stadium_image": "http://montgomerywatersmeadow.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 75,
+    "fields": {
+      "name": "Southampton",
+      "stadium": "St Mary's Stadium",
+      "club_image": "http://southampton.jpg",
+      "stadium_image": "http://stmarys.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 76,
+    "fields": {
+      "name": "Stevenage Borough",
+      "stadium": "Lamex Stadium",
+      "club_image": "http://stevenage.jpg",
+      "stadium_image": "http://lamexstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 77,
+    "fields": {
+      "name": "Stockport County",
+      "stadium": "Edgeley Park",
+      "club_image": "http://stockport.jpg",
+      "stadium_image": "http://edgeleypark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 78,
+    "fields": {
+      "name": "Stoke City",
+      "stadium": "Bet365 Stadium",
+      "club_image": "http://stokecity.jpg",
+      "stadium_image": "http://bet365stadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 79,
+    "fields": {
+      "name": "Sunderland",
+      "stadium": "Stadium of Light",
+      "club_image": "http://sunderland.jpg",
+      "stadium_image": "http://stadiumoflight.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 80,
+    "fields": {
+      "name": "Sutton United",
+      "stadium": "Gander Green Lane",
+      "club_image": "http://suttonunited.jpg",
+      "stadium_image": "http://gandersgreenlane.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 81,
+    "fields": {
+      "name": "Swansea City",
+      "stadium": "Liberty Stadium",
+      "club_image": "http://swanseacity.jpg",
+      "stadium_image": "http://libertystadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 82,
+    "fields": {
+      "name": "Swindon Town",
+      "stadium": "County Ground",
+      "club_image": "http://swindontown.jpg",
+      "stadium_image": "http://countyground.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 83,
+    "fields": {
+      "name": "Tottenham Hotspur",
+      "stadium": "Tottenham Hotspur Stadium",
+      "club_image": "http://tottenham.jpg",
+      "stadium_image": "http://tottenhamhotspurstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 84,
+    "fields": {
+      "name": "Tranmere Rovers",
+      "stadium": "Prenton Park",
+      "club_image": "http://tranmererovers.jpg",
+      "stadium_image": "http://prentonpark.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 85,
+    "fields": {
+      "name": "Walsall",
+      "stadium": "Banks's Stadium",
+      "club_image": "http://walsall.jpg",
+      "stadium_image": "http://bankss.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 86,
+    "fields": {
+      "name": "Watford",
+      "stadium": "Vicarage Road",
+      "club_image": "http://watford.jpg",
+      "stadium_image": "http://vicarageroad.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 87,
+    "fields": {
+      "name": "West Bromwich Albion",
+      "stadium": "The Hawthorns",
+      "club_image": "http://westbrom.jpg",
+      "stadium_image": "http://thehawthorns.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 88,
+    "fields": {
+      "name": "West Ham United",
+      "stadium": "London Stadium",
+      "club_image": "http://westham.jpg",
+      "stadium_image": "http://londonstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 89,
+    "fields": {
+      "name": "Wigan Athletic",
+      "stadium": "DW Stadium",
+      "club_image": "http://wigan.jpg",
+      "stadium_image": "http://dwwstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 90,
+    "fields": {
+      "name": "Wolverhampton Wanderers",
+      "stadium": "Molineux Stadium",
+      "club_image": "http://wolves.jpg",
+      "stadium_image": "http://molineuxstadium.jpg"
+    }
+  },
+  {
+    "model": "club.club",
+    "pk": 91,
+    "fields": {
+      "name": "Wycombe Wanderers",
+      "stadium": "Adams Park",
+      "club_image": "http://wycombe.jpg",
+      "stadium_image": "http://adamspark.jpg"
+    }
+  }
+]

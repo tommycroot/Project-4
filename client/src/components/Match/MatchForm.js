@@ -14,7 +14,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
   const [showModal, setShowModal] = useState(false)
   const [newFriendName, setNewFriendName] = useState('')
 
-  
+
 
   useEffect(() => {
     fetch('/api/club/')
@@ -37,7 +37,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
     }
     getFriends()
   }, [])
-  
+
   const handleNewFriendSubmit = async () => {
     try {
       const response = await authenticated.post('/api/friend/', { name: newFriendName })
@@ -59,7 +59,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
     }
     setError('')
   }
-  
+
 
   return (
     <Container>
@@ -71,7 +71,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
             <label htmlFor="season">Season<span id="required">*Required</span></label>
           </div>
           <select className="selectForm" name="season" value={formFields.season} onChange={handleChange}>
-            <option value="">Select a Season</option> 
+            <option value="">Select a Season</option>
             <option value="2020/2021">2020/2021</option>
             <option value="2021/2022">2021/2022</option>
             <option value="2021/2022">2021/2022</option>
@@ -129,7 +129,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
               onChange={selected => {
                 console.log(selected)
                 setFormFields({ ...formFields, friends: selected })
-              }}              
+              }}
             />
           )}
 
@@ -153,7 +153,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
                 <div className="modal-footer">
                   <button type="button" onClick={handleNewFriendSubmit} className="btn btn-primary">Save New Friend</button>
                   <button type="button" className="btn btn-secondary" onClick={() => setShowModal(false)}>Close</button>
-                  
+
                 </div>
               </div>
             </div>
@@ -167,7 +167,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
             <button className="btn mb-4">Submit</button>
           </div>
           {/* Error Display */}
-          { error && <p className='text-danger text-center'>{error}</p>}
+          {error && <p className='text-danger text-center'>{error}</p>}
         </Col>
       </Row>
     </Container>
