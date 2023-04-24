@@ -45,8 +45,8 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
       setFriends([...friends, response.data])
       setNewFriendName('')
       setShowModal(false)
-    } catch (err) {
-      console.log(err.message)
+    } catch (error) {
+      console.log(error.message)
     }
   }
 
@@ -57,7 +57,7 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
     } else {
       setFormFields({ ...formFields, [e.target.name]: e.target.value })
     }
-    setError('')
+    setError({})
   }
 
 
@@ -167,7 +167,15 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
             <button className="btn mb-4">Submit</button>
           </div>
           {/* Error Display */}
-          {error && <p className='text-danger text-center'>{error}</p>}
+          {error && (
+            <ul className="error">
+              {Object.keys(error).map((key) =>
+                error[key].map((errorMessage) => (
+                  <li key={`${key}-${errorMessage}`}>{`${key}: ${errorMessage}`}</li>
+                ))
+              )}
+            </ul>
+          )}
         </Col>
       </Row>
     </Container>

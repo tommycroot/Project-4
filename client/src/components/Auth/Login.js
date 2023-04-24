@@ -34,7 +34,8 @@ const Login = () => {
       axios.defaults.headers.common['Authorization'] = `Bearer ${data.token}`
       navigate('/profile')
     } catch (error) {
-      setError(error.response.data.message)
+      console.log('check',error.response.data.detail)
+      setError(error.response.data.detail)
       console.log('error', error)
     }
   }
@@ -54,7 +55,7 @@ const Login = () => {
               <button className='btn mb-4'>Login</button>
             </div>
 
-            {error && <p className='text-danger text-center'>{error}</p>}
+            {error && <p className='error'>{error}</p>}
             
           </Col>
         </Row>

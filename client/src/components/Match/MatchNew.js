@@ -28,7 +28,7 @@ const MatchNew = () => {
     friends: [],
   })
 
-  const [ error, setError ] = useState('')
+  const [ error, setError ] = useState({})
 
   // ! On Mount
   useEffect(() => {
@@ -48,7 +48,7 @@ const MatchNew = () => {
       navigate(`/match/${data.id}`)
     } catch (err) {
       console.log(err)
-      setError(err.response.data.message)
+      setError(err.response.data.detail)
     }
   }
 

@@ -8,10 +8,10 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
 const Register = () => {
-  
+
   const navigate = useNavigate()
-  
-  const [ formFields, setFormFields ] = useState({
+
+  const [formFields, setFormFields] = useState({
     username: '',
     email: '',
     password: '',
@@ -19,7 +19,7 @@ const Register = () => {
     profile_image: '',
   })
 
-  const [ error, setError] = useState('')
+  const [error, setError] = useState({})
 
   const handleChange = (e) => {
     setFormFields({ ...formFields, [e.target.name]: e.target.value })
@@ -32,9 +32,9 @@ const Register = () => {
       await axios.post('/api/auth/register/', formFields)
       navigate('/login')
 
-    } catch (err) {
-      console.log('error', err)
-      setError(err.response.data.message)
+    } catch (error) {
+      console.log('error', error.response.data.detail)
+      setError(error.response.data.detail)
     }
   }
   // ! JSX
@@ -56,13 +56,21 @@ const Register = () => {
             {/* Password Confirmation */}
             <label htmlFor="password_confirmation">Password Confirmation</label>
             <input type="password" name="password_confirmation" placeholder='Password Confirmation' onChange={handleChange} value={formFields.password_confirmation} />
-            {/* Error */}
-            {error && <p className='text-danger text-center'>{error}</p>}
+
             {/* Submit */}
             <div className='btnCenter'>
               <button className='btn mb-4'>Register</button>
             </div>
-            
+            {/* Error */}
+            {error && (
+              <ul className="error">
+                {Object.keys(error).map((key) =>
+                  error[key].map((errorMessage) => (
+                    <li key={`${key}-${errorMessage}`}>{`${key}: ${errorMessage}`}</li>
+                  ))
+                )}
+              </ul>
+            )}
           </Col>
         </Row>
       </Container>

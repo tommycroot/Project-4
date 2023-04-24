@@ -31,7 +31,7 @@ const MatchEdit = () => {
     friends: [],
   })
 
-  const [ error, setError ] = useState('')
+  const [ error, setError ] = useState({})
 
   useEffect(() => {
     const getMatchInfo = async () => {
@@ -52,7 +52,7 @@ const MatchEdit = () => {
         if (!isAuthenticated() || !userIsOwner(data)) navigate(`/match/${id}/`)
         console.log('Not Authenticated', !isAuthenticated())
         console.log('Not Owner', !userIsOwner(data))
-        const newMatch = { ...data, home_team: data.home_team.id, away_team: data.away_team.id, friends: data.friends }
+        const newMatch = { ...data, home_team: data.home_team.id, away_team: data.away_team.id, friends: data.friends.map(f => ({ value: f.id, label: f.name })) }
         console.log('New Match Data', newMatch)
         setFormFields(newMatch)
         
@@ -78,7 +78,7 @@ const MatchEdit = () => {
       navigate(`/match/${data.id}`)
     } catch (err) {
       console.log(err)
-      setError(err.response.data.message)
+      setError(err.response.data.detail)
     }
   }
 
