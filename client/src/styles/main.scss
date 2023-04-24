@@ -98,7 +98,7 @@ span {
 }
 
 a:-webkit-any-link  {
-    color: yellow;
+    color: pink;
     margin-bottom: 5px;
     text-decoration: none;
 }
@@ -132,7 +132,10 @@ select{
     h1{
       color:black;
     }
-    
+    p{
+      color: yellow;
+    }
+
     .error{
       color:rgb(67, 7, 7);
     }
@@ -310,6 +313,17 @@ span {
     margin-left: 50px;
   }
 }
+@media screen and (max-width: 767px) {
+  .modal-content {
+    width: 100%;
+    max-width: 400px;
+    margin-left: 230px;
+  }
+}
+
+
+
+
 
 .btn-primary{
   background-color: yellow;
@@ -395,10 +409,6 @@ select{
       border: none;
     }
 
-
-    a{
-      color: pink;
-    }
 
     .btnCenter {
       text-align: center;

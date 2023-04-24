@@ -60,8 +60,8 @@ const MatchPage = ({ user }) => {
               <h3>Date:<span>{date}</span></h3>
               <h3>Score:<span>{result}</span></h3>
               <h3>Competition:<span>{competition}</span></h3>
-              <h3>Goalscorers:<span>{goalscorers}</span></h3> 
-              <h3>Assists:<span>{assists}</span></h3> 
+              <h3>Goalscorers:<span>{goalscorers}</span></h3>
+              <h3>Assists:<span>{assists}</span></h3>
               <h3>Yellow Cards:<span>{yellow_cards}</span></h3>
               <h3>Red Cards:<span>{red_cards}</span></h3>
               <h3>Friends:<span>{friends && (
@@ -71,7 +71,11 @@ const MatchPage = ({ user }) => {
                   ))}
                 </ul>
               )}</span></h3>
-              <h3>Notes:<span>{notes}</span></h3>
+              <h3>Notes:</h3>
+              <div className='notes'>
+                <p id='notes'>{notes}</p>
+              </div>
+              <br />
             </div>
             {userIsOwner(match) && <div className='editItem'><Link id="edit" to={`/match/${id}/edit`}>Edit Match</Link></div>}
             {userIsOwner(match) && <div><Link className='text-danger' onClick={handleDelete}>Delete Match</Link></div>}

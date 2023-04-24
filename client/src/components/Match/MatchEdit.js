@@ -1,5 +1,6 @@
 import React,{ useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
+import Spinner from '../Spinner.js'
 
 
 // Custom functions
@@ -32,11 +33,14 @@ const MatchEdit = () => {
   })
 
   const [ error, setError ] = useState({})
+  const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
     const getMatchInfo = async () => {
+      setIsLoading(true)
       const { data } = await authenticated.get(`/api/match/${id}/`)
       setMatch(data)
+      setIsLoading(false)
     }
     getMatchInfo()
   }, [id])
@@ -45,8 +49,8 @@ const MatchEdit = () => {
   // ! On Mount
 
   useEffect(() => {
-  
     const getMatch = async () => {
+      setIsLoading(true)
       try {
         const { data } = await authenticated.get(`/api/match/${id}/`)
         if (!isAuthenticated() || !userIsOwner(data)) navigate(`/match/${id}/`)
@@ -59,11 +63,11 @@ const MatchEdit = () => {
       } catch (err) {
         console.log(err)
       }
+      setIsLoading(false)
     }
     getMatch()
-    
-
   }, [id])
+    
 
   // ! Execution
   const handleSubmit = async (e) => {
@@ -84,15 +88,24 @@ const MatchEdit = () => {
 
   return (
     <main className='form-page'>
-      <MatchForm 
-        formFields={formFields}
-        setFormFields={setFormFields}
-        error={error}
-        setError={setError}
-        handleSubmit={handleSubmit}
-      />
+      {isLoading ? <Spinner /> : (
+        <MatchForm 
+          formFields={formFields}
+          setFormFields={setFormFields}
+          error={error}
+          setError={setError}
+          handleSubmit={handleSubmit}
+        />
+      )}
     </main>
   )
 }
 
 export default MatchEdit
+
+
+
+
+
+
+

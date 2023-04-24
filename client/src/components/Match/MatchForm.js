@@ -74,7 +74,6 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
             <option value="">Select a Season</option>
             <option value="2020/2021">2020/2021</option>
             <option value="2021/2022">2021/2022</option>
-            <option value="2021/2022">2021/2022</option>
             <option value="2022/2023">2022/2023</option>
             <option value="2023/2024">2023/2024</option>
             <option value="2024/2025">2024/2025</option>
@@ -105,6 +104,9 @@ const MatchForm = ({ title, formFields, setFormFields, error, setError, handleSu
             <option value="Championship">EFL Championship</option>
             <option value="League One">EFL League One</option>
             <option value="League Two">EFL League Two</option>
+            <option value="FA Cup">FA Cup</option>
+            <option value="EFL Cup (Carabao Cup)">EFL Cup (Carabao Cup)</option>
+            <option value="EFL Trophy (Papa John's Trophy)">EFL Trophy (Papa John&apos;s Trophy)</option>
           </select>
           {/* Goalscorers */}
           <label htmlFor="goalscorers">Goal Scorers</label>

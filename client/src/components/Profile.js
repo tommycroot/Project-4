@@ -13,6 +13,7 @@ const Profile = () => {
 
   const [matches, setMatches] = useState([])
   const [filteredMatches, setFilteredMatches] = useState([])
+  const [error, setError] = useState('')
   
 
   useEffect(() => {
@@ -22,8 +23,8 @@ const Profile = () => {
         const { data } = await authenticated.get('/api/match/')
         console.log('response', data)
         setMatches(data)
-      } catch (err) {
-        console.log(err.message)
+      } catch (error) {
+        setError(error)
       }
     }
     getInfo()
@@ -34,9 +35,9 @@ const Profile = () => {
   return (
     <main className="container">
       {/* Filters section */}
-      <Filters matches={matches} setFilteredMatches={setFilteredMatches} />
+      <Filters matches={matches} setFilteredMatches={setFilteredMatches} error={error} setError={setError} />
       {/* Matches List */}
-      <Matches filteredMatches={filteredMatches} />
+      <Matches filteredMatches={filteredMatches} error={error} setError={setError}/>
     </main>
   )
 }
