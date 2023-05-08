@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 import { authenticated, getPayload } from './helpers/auth'
 import Filters from './Filters'
-import Matches from './Match/Matches'
+import Matches from './match/Matches'
 
 
 const Profile = () => {
