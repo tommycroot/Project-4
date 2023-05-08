@@ -24,7 +24,7 @@
     "dev": "react-scripts start"
   },
   "eslintConfig": {
-    "extends": ["eslint:recomended", "deprecated"],
+    "extends": ["eslint:recommended", "deprecated"],
     "root": true
   },
   "browserslist": {
