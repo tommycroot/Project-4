@@ -79,7 +79,7 @@ const MatchEdit = () => {
       }
       console.log('formFieldsRefact', formFieldsRefact)
       console.log('id', id)
-      const { data } = await authenticated.put(`/api/match/${id}/`, formFieldsRefact)
+      await authenticated.put(`/api/match/${id}/`, formFieldsRefact)
       navigate(`/match/${id}`)
     } catch (err) {
       console.log(err)
