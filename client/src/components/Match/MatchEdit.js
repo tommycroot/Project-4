@@ -77,9 +77,10 @@ const MatchEdit = () => {
         ...formFields, 
         friends: formFields.friends.map(friend => friend.value),
       }
-      console.log(formFieldsRefact)
-      const { data } = await authenticated.post('/api/match/', formFieldsRefact)
-      navigate(`/match/${data.id}`)
+      console.log('formFieldsRefact', formFieldsRefact)
+      console.log('id', id)
+      const { data } = await authenticated.put(`/api/match/${id}/`, formFieldsRefact)
+      navigate(`/match/${id}`)
     } catch (err) {
       console.log(err)
       setError(err.response.data.detail)
