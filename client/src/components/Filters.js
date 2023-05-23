@@ -5,11 +5,12 @@ import Col from 'react-bootstrap/Col'
 
 const Filters = ({ matches, setFilteredMatches }) => {
 
-  const [ filters, setFilters ] = useState({
+  const [filters, setFilters] = useState({
     season: 'All',
     search: '',
     homeTeam: 'All',
     awayTeam: 'All',
+    friendName: 'All',
   })
 
   const handleChange = (e) => {
@@ -23,7 +24,10 @@ const Filters = ({ matches, setFilteredMatches }) => {
       return regex.test(match.date) &&
         (match.season === filters.season || filters.season === 'All') &&
         (match.home_team.name === filters.homeTeam || filters.homeTeam === 'All') &&
-        (match.away_team.name === filters.awayTeam || filters.awayTeam === 'All')
+        (match.away_team.name === filters.awayTeam || filters.awayTeam === 'All') &&
+        (filters.friendName === 'All' ||
+          match.friends.some((friend) => friend.name === filters.friendName))
+
     }).sort((a, b) => a.date > b.date ? 1 : -1)
     setFilteredMatches(newFilteredMatches)
   }, [filters, matches])
@@ -34,6 +38,9 @@ const Filters = ({ matches, setFilteredMatches }) => {
   const awayTeamNames = [...new Set(matches.map(match => match.away_team.name))].sort()
   awayTeamNames.unshift('All')
 
+  const friendNames = [...new Set(matches.flatMap((match) => match.friends.map((friend) => friend.name)))].sort()
+  friendNames.unshift('All')
+
   return (
     <Container>
       <Row>
@@ -43,7 +50,7 @@ const Filters = ({ matches, setFilteredMatches }) => {
             <p>Season</p>
             <select name="season" value={filters.season} onChange={handleChange}>
               <option value="All">All</option>
-              { matches && 
+              {matches &&
                 [...new Set(matches.map(match => match.season))].sort().map(season => {
                   return <option key={season} value={season}>{season}</option>
                 })}
@@ -64,12 +71,22 @@ const Filters = ({ matches, setFilteredMatches }) => {
                 <option key={teamName} value={teamName}>{teamName}</option>
               ))}
             </select>
+
+            {/* Friend's name dropdown */}
+            <p>Friend</p>
+            <select name="friendName" value={filters.friendName} onChange={handleChange}>
+              {friendNames.map((name) => (
+                <option key={name} value={name}>
+                  {name}
+                </option>
+              ))}
+            </select>
           </section>
         </Col>
       </Row>
     </Container>
   )
-  
+
 }
 
 export default Filters
