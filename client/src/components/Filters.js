@@ -72,7 +72,7 @@ const Filters = ({ matches, setFilteredMatches }) => {
             </select>
 
             {/* Friend's name dropdown */}
-            <p>Friend</p>
+            <p>Friends</p>
             <select name="friendName" value={filters.friendName} onChange={handleChange}>
               {friendNames.map((name) => (
                 <option key={name} value={name}>
