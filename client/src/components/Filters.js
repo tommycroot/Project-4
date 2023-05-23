@@ -40,7 +40,6 @@ const Filters = ({ matches, setFilteredMatches }) => {
 
   const friendNames = [...new Set(matches.flatMap((match) => match.friends.map((friend) => friend.name)))].sort()
   friendNames.unshift('All')
-
   return (
     <Container>
       <Row>
