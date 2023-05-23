@@ -6,6 +6,7 @@ from lib.exceptions import exceptions
 from .models import Match
 from .serializers.common import MatchSerializer
 from .serializers.post import MatchPostSerializer
+from .serializers.update import MatchUpdateSerializer
 from rest_framework.exceptions import PermissionDenied
 
 class MatchListView(APIView):
@@ -38,7 +39,7 @@ class MatchDetailView(APIView):
     @exceptions
     def put(self, request, pk):
         match = Match.objects.get(pk=pk)
-        serialized_match = MatchPostSerializer(match, request.data, partial=True)
+        serialized_match = MatchUpdateSerializer(match, request.data, partial=True)
         serialized_match.is_valid(raise_exception=True)
         serialized_match.save()
         return Response(serialized_match.data)
