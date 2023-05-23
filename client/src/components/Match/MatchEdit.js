@@ -1,4 +1,4 @@
-import React,{ useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useNavigate, useParams } from 'react-router-dom'
 import Spinner from '../Spinner.js'
 
@@ -14,10 +14,10 @@ const MatchEdit = () => {
   // ! Location variables
   const navigate = useNavigate()
   const { id } = useParams()
-  const [ match, setMatch ] = useState(null)
+  const [match, setMatch] = useState(null)
 
   // ! State
-  const [ formFields, setFormFields ] = useState({
+  const [formFields, setFormFields] = useState({
     season: '',
     date: '',
     home_team: {},
@@ -32,7 +32,7 @@ const MatchEdit = () => {
     friends: [],
   })
 
-  const [ error, setError ] = useState({})
+  const [error, setError] = useState({})
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const MatchEdit = () => {
         const newMatch = { ...data, home_team: data.home_team.id, away_team: data.away_team.id, friends: data.friends.map(f => ({ value: f.id, label: f.name })) }
         console.log('New Match Data', newMatch)
         setFormFields(newMatch)
-        
+
       } catch (err) {
         console.log(err)
       }
@@ -67,15 +67,15 @@ const MatchEdit = () => {
     }
     getMatch()
   }, [id])
-    
+
 
   // ! Execution
   const handleSubmit = async (e) => {
     e.preventDefault()
     try {
       const formFieldsRefact = {
-        ...formFields, 
-        friends: formFields.friends.map(friend => friend.value),
+        ...formFields,
+        friends: formFields.friends.map((friend) => friend.value),
       }
       console.log('formFieldsRefact', formFieldsRefact)
       console.log('id', id)
@@ -90,7 +90,7 @@ const MatchEdit = () => {
   return (
     <main className='form-page'>
       {isLoading ? <Spinner /> : (
-        <MatchForm 
+        <MatchForm
           formFields={formFields}
           setFormFields={setFormFields}
           error={error}
