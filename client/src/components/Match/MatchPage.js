@@ -47,7 +47,8 @@ const MatchPage = ({ user }) => {
       <Container>
         <Row className="item-row">
           <Col className='match-title'>
-            <h1>{home_team.name} vs {away_team.name}</h1>
+            <h1 id="matchTitle">{home_team.name} vs {away_team.name}</h1>
+            <p className='images'><img id="badge"src={home_team.club_image}></img><img id="stadium" src={home_team.stadium_image} alt="Stadium" /><img id="badge"src={away_team.club_image}></img></p>
           </Col>
         </Row>
         <Row className="imageInfoRow">
@@ -56,6 +57,7 @@ const MatchPage = ({ user }) => {
           </Col>
           <Col md={6} className='matchInfo'>
             <div className='matchInfoText'>
+              <p id="stadName">{home_team.stadium}</p>
               <h3>Season:<span>{season}</span></h3>
               <h3>Date:<span>{date}</span></h3>
               <h3>Score:<span>{result}</span></h3>

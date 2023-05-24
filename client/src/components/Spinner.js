@@ -1,11 +1,11 @@
-import spinnerGIF from '../images/spinner2.gif'
+import soccerball from '../images/soccerball.gif'
 
 
 const Spinner = () => {
 
   return (
     <div className="spinner text-center">
-      <img src={spinnerGIF}></img>
+      <img id="ball" src={soccerball}></img>
     </div>
   )
 
