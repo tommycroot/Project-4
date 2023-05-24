@@ -5,8 +5,8 @@
     "fields": {
       "name": "Accrington Stanley",
       "stadium": "Wham Stadium",
-      "club_image": "http://accringtonstanley.jpg",
-      "stadium_image": "http://wham.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Accrington_Stanley_F.C._logo.svg/1200px-Accrington_Stanley_F.C._logo.svg.png",
+      "stadium_image": "https://www.accringtonstanley.co.uk/contentassets/4d70e2a7b0f348ddac974d9d9ee27bf7/wham-stadium.jpg"
     }
   },
   {
@@ -15,8 +15,8 @@
     "fields": {
       "name": "AFC Bournemouth",
       "stadium": "Vitality Stadium",
-      "club_image": "http://bournemouth.jpg",
-      "stadium_image": "http://vitality.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/AFC_Bournemouth_%282013%29.svg/1200px-AFC_Bournemouth_%282013%29.svg.png",
+      "stadium_image": "https://images-morebus.passenger-website.com/Untitled%20design%20%2810%29.png"
     }
   },
   {
@@ -25,8 +25,8 @@
     "fields": {
       "name": "AFC Wimbledon",
       "stadium": "Plough Lane",
-      "club_image": "http://afcwimbledon.jpg",
-      "stadium_image": "http://ploughlane.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Arsenal_FC.svg/1200px-Arsenal_FC.svg.png",
+      "stadium_image": "https://ichef.bbci.co.uk/live-experience/cps/624/cpsprodpb/1483C/production/_115182048_ploughlanetrevorwilliams.jpg"
     }
   },
   {
@@ -35,8 +35,8 @@
     "fields": {
       "name": "Arsenal FC",
       "stadium": "Emirates Stadium",
-      "club_image": "http://arsenal.jpg",
-      "stadium_image": "http://emirates.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/hif/8/82/Arsenal_FC.png",
+      "stadium_image": "https://www.civitatis.com/f/reino-unido/londres/tour-emirates-stadium-r32.jpg"
     }
   },
   {
@@ -45,8 +45,8 @@
     "fields": {
       "name": "Aston Villa",
       "stadium": "Villa Park",
-      "club_image": "http://villa.jpg",
-      "stadium_image": "http://villapark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f9/Aston_Villa_FC_crest_%282016%29.svg/1200px-Aston_Villa_FC_crest_%282016%29.svg.png",
+      "stadium_image": "https://cdn.ca.emap.com/wp-content/uploads/sites/8/2022/03/Villa-Park-1024x682.jpg"
     }
   },
   {
@@ -55,8 +55,8 @@
     "fields": {
       "name": "Barnsley",
       "stadium": "Oakwell",
-      "club_image": "http://barnsley.jpg",
-      "stadium_image": "http://oakwell.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Barnsley_FC.svg/1200px-Barnsley_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Oakwell_Stadium-1.jpg"
     }
   },
   {
@@ -65,8 +65,8 @@
     "fields": {
       "name": "Barrow",
       "stadium": "Holker Street",
-      "club_image": "http://barrow.jpg",
-      "stadium_image": "http://holkerstreet.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/28/Barrow_AFC_logo.svg/1200px-Barrow_AFC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/HolkerStreet.png"
     }
   },
   {
@@ -75,8 +75,8 @@
     "fields": {
       "name": "Birmingham City",
       "stadium": "St Andrew's",
-      "club_image": "http://birmingham.jpg",
-      "stadium_image": "http://standrews.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/68/Birmingham_City_FC_logo.svg/1200px-Birmingham_City_FC_logo.svg.png",
+      "stadium_image": "https://ichef.bbci.co.uk/onesport/cps/624/cpsprodpb/B632/production/_123624664_shutterstock_editorial_9469248g.jpg"
     }
   },
   {
@@ -85,8 +85,8 @@
     "fields": {
       "name": "Blackburn Rovers",
       "stadium": "Ewood Park",
-      "club_image": "http://blackburn.jpg",
-      "stadium_image": "http://ewood.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/0f/Blackburn_Rovers.svg/1200px-Blackburn_Rovers.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Ewood_Park_2011.jpg/1200px-Ewood_Park_2011.jpg"
     }
   },
   {
@@ -95,8 +95,8 @@
     "fields": {
       "name": "Blackpool",
       "stadium": "Bloomfield Road",
-      "club_image": "http://blackpool.jpg",
-      "stadium_image": "http://bloomfield.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/df/Blackpool_FC_logo.svg/640px-Blackpool_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Bloomfield_Road_PL_Kickoff-geograph-2039284.jpg"
     }
   },
   {
@@ -105,8 +105,8 @@
     "fields": {
       "name": "Bolton Wanderers",
       "stadium": "University of Bolton Stadium",
-      "club_image": "http://bolton.jpg",
-      "stadium_image": "http://universityofboltonstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Bolton_Wanderers_FC_logo.svg/1200px-Bolton_Wanderers_FC_logo.svg.png",
+      "stadium_image": "https://i2-prod.manchestereveningnews.co.uk/incoming/article26296571.ece/ALTERNATES/s615b/0_Bolton-Wanderers-v-Milton-Keynes-Dons-EFL-Sky-Bet-League-One-Football-University-of-Bolton-Stadiu.jpg"
     }
   },
   {
@@ -114,9 +114,9 @@
     "pk": 12,
     "fields": {
       "name": "Bradford City",
-      "stadium": "Utilita Energy Stadium",
-      "club_image": "http://bradford.jpg",
-      "stadium_image": "http://utilitaenergystadium.jpg"
+      "stadium": "University of Bradford Stadium",
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/3/32/Bradford_City_AFC.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Valley_Parade%2C_Bradford.jpg"
     }
   },
   {
@@ -125,8 +125,8 @@
     "fields": {
       "name": "Brentford",
       "stadium": "Brentford Community Stadium",
-      "club_image": "http://brentford.jpg",
-      "stadium_image": "http://brentfordcommunity.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2a/Brentford_FC_crest.svg/1200px-Brentford_FC_crest.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Brentford_Community_Stadium_2020.jpg"
     }
   },
   {
@@ -134,9 +134,9 @@
     "pk": 14,
     "fields": {
       "name": "Brighton & Hove Albion",
-      "stadium": "Falmer Stadium",
-      "club_image": "http://brighton.jpg",
-      "stadium_image": "http://falmer.jpg"
+      "stadium": "Amex Stadium",
+      "club_image": "https://logodownload.org/wp-content/uploads/2019/10/brighton-hove-albion-logo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Falmer_Stadium_-_night.jpg/1024px-Falmer_Stadium_-_night.jpg"
     }
   },
   {
@@ -145,8 +145,8 @@
     "fields": {
       "name": "Bristol City",
       "stadium": "Ashton Gate Stadium",
-      "club_image": "http://bristolcity.jpg",
-      "stadium_image": "http://ashtongate.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f5/Bristol_City_crest.svg/1200px-Bristol_City_crest.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Ashton_Gate_-_Lansdown_Stand.jpg"
     }
   },
   {
@@ -155,8 +155,8 @@
     "fields": {
       "name": "Burnley FC",
       "stadium": "Turf Moor",
-      "club_image": "http://burnley.jpg",
-      "stadium_image": "http://turfmoor.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/6/62/Burnley_F.C._Logo.svg/1200px-Burnley_F.C._Logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/c/c7/James_Hargreaves_Stand_Burnley.jpg"
     }
   },
   {
@@ -165,8 +165,8 @@
     "fields": {
       "name": "Burton Albion",
       "stadium": "Pirelli Stadium",
-      "club_image": "http://burton.jpg",
-      "stadium_image": "http://pirelli.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/53/Burton_Albion_FC_logo.svg/1200px-Burton_Albion_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/9/9c/Burton_Albion_FC%2C_Pirelli_Stadium%2C_Burton_upon_Trent%2C_Staffordshire_-_geograph.org.uk_-_190956.jpg"
     }
   },
   {
@@ -175,8 +175,8 @@
     "fields": {
       "name": "Cambridge United",
       "stadium": "Abbey Stadium",
-      "club_image": "http://cambridge.jpg",
-      "stadium_image": "http://abbey.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8f/Cambridge_United_FC.svg/1200px-Cambridge_United_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Abbey_South_Stand.JPG"
     }
   },
   {
@@ -185,8 +185,8 @@
     "fields": {
       "name": "Cardiff City",
       "stadium": "Cardiff City Stadium",
-      "club_image": "http://cardiff.jpg",
-      "stadium_image": "http://cardiffcitystadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3c/Cardiff_City_crest.svg/1200px-Cardiff_City_crest.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Cardiff_City_Stadium_Pitch.jpg"
     }
   },
   {
@@ -195,8 +195,8 @@
     "fields": {
       "name": "Carlisle United",
       "stadium": "Brunton Park",
-      "club_image": "http://carlisle.jpg",
-      "stadium_image": "http://brunton.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/6/63/Carl_Badge.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Waterworks.jpg/220px-Waterworks.jpg"
     }
   },
   {
@@ -205,8 +205,8 @@
     "fields": {
       "name": "Charlton Athletic",
       "stadium": "The Valley",
-      "club_image": "http://charlton.jpg",
-      "stadium_image": "http://thevalley.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/CharltonBadge_30Jan2020.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Charlton_Athletic_football_ground.jpg/1200px-Charlton_Athletic_football_ground.jpg"
     }
   },
   {
@@ -215,8 +215,8 @@
     "fields": {
       "name": "Chelsea",
       "stadium": "Stamford Bridge",
-      "club_image": "http://chelsea.jpg",
-      "stadium_image": "http://stamfordbridge.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Chelsea_FC.svg/1200px-Chelsea_FC.svg.png",
+      "stadium_image": "https://footballarroyo.co.uk/wp-content/uploads/2022/11/Stamford-Bridge-Stadium-Capacity-Tickets-Seating-Plan-Records-Location-Parking-scaled.jpg"
     }
   },
   {
@@ -225,8 +225,8 @@
     "fields": {
       "name": "Cheltenham Town",
       "stadium": "Whaddon Road",
-      "club_image": "http://cheltenham.jpg",
-      "stadium_image": "http://whaddonroad.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Cheltenham_Town_F.C._logo.svg/800px-Cheltenham_Town_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/en/thumb/0/05/WhaddonRoad.jpg/1024px-WhaddonRoad.jpg"
     }
   },
   {
@@ -235,8 +235,8 @@
     "fields": {
       "name": "Colchester United",
       "stadium": "JobServe Community Stadium",
-      "club_image": "http://colchester.jpg",
-      "stadium_image": "http://jobservestadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Colchester_United_FC.png/800px-Colchester_United_FC.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Weston_Homes_Community_Stadium.jpg/300px-Weston_Homes_Community_Stadium.jpg"
     }
   },
   {
@@ -244,9 +244,9 @@
     "pk": 25,
     "fields": {
       "name": "Coventry City",
-      "stadium": "St Andrew's Trillion Trophy Stadium",
-      "club_image": "http://coventry.jpg",
-      "stadium_image": "http://standrews.jpg"
+      "stadium": "Coventry Building Society Arena",
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/1/1a/Coventry_City_F.C._logo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Coventry_Derby_October_2021_-_2.jpg/1280px-Coventry_Derby_October_2021_-_2.jpg"
     }
   },
   {
@@ -255,8 +255,8 @@
     "fields": {
       "name": "Crawley Town",
       "stadium": "People's Pension Stadium",
-      "club_image": "http://crawley.jpg",
-      "stadium_image": "http://peoplespensionstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/8/8b/Crawley_Town_FC_logo.png",
+      "stadium_image": "https://www.crawleytownfc.com/siteassets/images/stadium-views/view-from-west-stand.jpg"
     }
   },
   {
@@ -265,8 +265,8 @@
     "fields": {
       "name": "Crewe Alexandra",
       "stadium": "Gresty Road",
-      "club_image": "http://crewe.jpg",
-      "stadium_image": "http://grestyroad.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9d/Crewe_Alexandra.svg/1200px-Crewe_Alexandra.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Gresty_Road%2C_Crewe.jpg"
     }
   },
   {
@@ -275,8 +275,8 @@
     "fields": {
       "name": "Crystal Palace",
       "stadium": "Selhurst Park",
-      "club_image": "http://crystalpalace.jpg",
-      "stadium_image": "http://selhurstpark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/hif/c/c1/Crystal_Palace_FC_logo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Selhurst_Park_Holmesdale_Stand.jpg"
     }
   },
   {
@@ -285,8 +285,8 @@
     "fields": {
       "name": "Derby County",
       "stadium": "Pride Park Stadium",
-      "club_image": "http://derby.jpg",
-      "stadium_image": "http://pridepark.jpg"
+      "club_image": "https://static.wikia.nocookie.net/logopedia/images/d/dc/Derby_County_FC_logo_%282003-2005_reverse%29.png/",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/06/Pride_Park_Stadium_South_Stand.JPG/300px-Pride_Park_Stadium_South_Stand.JPG"
     }
   },
   {
@@ -294,9 +294,9 @@
     "pk": 30,
     "fields": {
       "name": "Doncaster Rovers",
-      "stadium": "Keepmoat Stadium",
-      "club_image": "http://doncasterrovers.jpg",
-      "stadium_image": "http://keepmoat.jpg"
+      "stadium": "Eco-Power Stadium",
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c5/Doncaster_Rovers_F.C._logo.svg/1200px-Doncaster_Rovers_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/d/dd/Keepmoat1.jpg"
     }
   },
   {
@@ -305,8 +305,8 @@
     "fields": {
       "name": "Everton",
       "stadium": "Goodison Park",
-      "club_image": "http://everton.jpg",
-      "stadium_image": "http://goodisonpark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/7c/Everton_FC_logo.svg/1200px-Everton_FC_logo.svg.png",
+      "stadium_image": "http://stadiumdb.com/pictures/stadiums/eng/goodison_park/goodison_park31.jpg"
     }
   },
   {
@@ -315,8 +315,8 @@
     "fields": {
       "name": "Exeter City",
       "stadium": "St James Park",
-      "club_image": "http://exetercity.jpg",
-      "stadium_image": "http://stjamespark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/71/Exeter_City_FC.svg/1200px-Exeter_City_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/St_James_Park.JPG"
     }
   },
   {
@@ -325,8 +325,8 @@
     "fields": {
       "name": "Fleetwood Town",
       "stadium": "Highbury Stadium",
-      "club_image": "http://fleetwoodtown.jpg",
-      "stadium_image": "http://highbury.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/Fleetwood_Town_F.C._logo.svg/1200px-Fleetwood_Town_F.C._logo.svg.png",
+      "stadium_image": "https://hoppersguide.com/wp-content/uploads/2022/04/Fleetwood-Town-Highbury-Stadium.jpg"
     }
   },
   {
@@ -335,8 +335,8 @@
     "fields": {
       "name": "Forest Green Rovers",
       "stadium": "The New Lawn",
-      "club_image": "http://forestgreenrovers.jpg",
-      "stadium_image": "http://thenewlawn.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/85/Forest_Green_Rovers_crest.svg/1200px-Forest_Green_Rovers_crest.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/LawnFGR2006STS20062007.jpg"
     }
   },
   {
@@ -345,8 +345,8 @@
     "fields": {
       "name": "Fulham",
       "stadium": "Craven Cottage",
-      "club_image": "http://fulham.jpg",
-      "stadium_image": "http://cravencottage.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/e/eb/Fulham_FC_%28shield%29.svg",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Craven_Cottage_Football_Ground_-_geograph.org.uk_-_778731.jpg"
     }
   },
   {
@@ -355,8 +355,8 @@
     "fields": {
       "name": "Gillingham FC",
       "stadium": "Priestfield Stadium",
-      "club_image": "http://gillingham.jpg",
-      "stadium_image": "http://priestfield.jpg"
+      "club_image": "https://seeklogo.com/images/G/gillingham-fc-logo-275FE4E27C-seeklogo.com.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Priestfield_Stadium_Medway_Stand.jpg"
     }
   },
   {
@@ -365,8 +365,8 @@
     "fields": {
       "name": "Grimsby Town",
       "stadium": "Blundell Park",
-      "club_image": "http://grimsby.jpg",
-      "stadium_image": "http://blundellpark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/db/Grimsby_Town_F.C._logo.svg/1200px-Grimsby_Town_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Blundell_Park_-_geograph.org.uk_-_125740.jpg"
     }
   },
   {
@@ -375,8 +375,8 @@
     "fields": {
       "name": "Harrogate Town",
       "stadium": "Wetherby Road",
-      "club_image": "http://harrogatetown.jpg",
-      "stadium_image": "http://wetherbyroad.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/d/d1/Harrogate_town_badge.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Aerial_photograph_of_Wetherby_Road_Stadium_%2820th_May_2021%29_002.jpg"
     }
   },
   {
@@ -385,8 +385,8 @@
     "fields": {
       "name": "Hartlepool United",
       "stadium": "Victoria Park",
-      "club_image": "http://hartlepoolunited.jpg",
-      "stadium_image": "http://victoriapark.jpg"
+      "club_image": "https://www.wokingfc.co.uk/_img/_badges/hartlepoolunited.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Hartlepool_United_Cyril_Knowles_Stand.jpg/220px-Hartlepool_United_Cyril_Knowles_Stand.jpg"
     }
   },
   {
@@ -395,8 +395,8 @@
     "fields": {
       "name": "Huddersfield Town",
       "stadium": "John Smith's Stadium",
-      "club_image": "http://huddersfield.jpg",
-      "stadium_image": "http://johnsmithsstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/7/7d/Huddersfield_Town_A.F.C._logo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/8/8f/Hudderslfield_0_Chelsea_3_%2830144863978%29.jpg"
     }
   },
   {
@@ -405,8 +405,8 @@
     "fields": {
       "name": "Hull City",
       "stadium": "KCOM Stadium",
-      "club_image": "http://hull.jpg",
-      "stadium_image": "http://kcomstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Hull_City_A.F.C._logo.svg/1200px-Hull_City_A.F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/KCOM_Stadium.jpg"
     }
   },
   {
@@ -415,8 +415,8 @@
     "fields": {
       "name": "Ipswich Town",
       "stadium": "Portman Road",
-      "club_image": "http://ipswichtown.jpg",
-      "stadium_image": "http://portmanroad.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Ipswich_Town.svg/1200px-Ipswich_Town.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/Portman_Road_aerial_%28cropped%29.jpg/1200px-Portman_Road_aerial_%28cropped%29.jpg"
     }
   },
   {
@@ -425,8 +425,8 @@
     "fields": {
       "name": "Leeds United",
       "stadium": "Elland Road",
-      "club_image": "http://leeds.jpg",
-      "stadium_image": "http://ellandroad.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/54/Leeds_United_F.C._logo.svg/800px-Leeds_United_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Leeds_United_-_31559864360.jpg/1200px-Leeds_United_-_31559864360.jpg"
     }
   },
   {
@@ -435,8 +435,8 @@
     "fields": {
       "name": "Leicester City",
       "stadium": "King Power Stadium",
-      "club_image": "http://leicester.jpg",
-      "stadium_image": "http://kingpowerstadium.jpg"
+      "club_image": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e8.png",
+      "stadium_image": "https://www.goal.pl/wp-content/uploads/2021/09/king-power-stadium.jpg"
     }
   },
   {
@@ -445,8 +445,8 @@
     "fields": {
       "name": "Leyton Orient",
       "stadium": "Brisbane Road",
-      "club_image": "http://leytonorient.jpg",
-      "stadium_image": "http://brisbane.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Leyton_Orient_F.C._logo.svg/1200px-Leyton_Orient_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Brisbane_Road.jpg"
     }
   },
   {
@@ -455,8 +455,8 @@
     "fields": {
       "name": "Lincoln City",
       "stadium": "LNER Stadium",
-      "club_image": "http://lincolncity.jpg",
-      "stadium_image": "http://lner.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/Lincoln_City_FC_logo.svg/1200px-Lincoln_City_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/e/e1/LNER_Community_Stadium.jpg"
     }
   },
   {
@@ -465,8 +465,8 @@
     "fields": {
       "name": "Liverpool",
       "stadium": "Anfield",
-      "club_image": "http://liverpool.jpg",
-      "stadium_image": "http://anfield.jpg"
+      "club_image": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e5.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/0/02/Panorama_of_Anfield_with_new_main_stand_%2829676137824%29.jpg"
     }
   },
   {
@@ -475,8 +475,8 @@
     "fields": {
       "name": "Luton Town",
       "stadium": "Kenilworth Road",
-      "club_image": "http://lutontown.jpg",
-      "stadium_image": "http://kenilworthroad.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/8/8b/LutonTownFC2009.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Kenilworth_Road.jpg"
     }
   },
   {
@@ -485,8 +485,8 @@
     "fields": {
       "name": "Manchester City",
       "stadium": "Etihad Stadium",
-      "club_image": "http://mancity.jpg",
-      "stadium_image": "http://etihadstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/1200px-Manchester_City_FC_badge.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Etihad_Stadium.jpg"
     }
   },
   {
@@ -495,8 +495,8 @@
     "fields": {
       "name": "Manchester United",
       "stadium": "Old Trafford",
-      "club_image": "http://manutd.jpg",
-      "stadium_image": "http://oldtrafford.jpg"
+      "club_image": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e7.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Manchester_United_Panorama_%288051523746%29.jpg/640px-Manchester_United_Panorama_%288051523746%29.jpg"
     }
   },
   {
@@ -505,8 +505,8 @@
     "fields": {
       "name": "Mansfield Town",
       "stadium": "Field Mill",
-      "club_image": "http://mansfieldtown.jpg",
-      "stadium_image": "http://fieldmill.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/a/a2/AFCMansfieldlogo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/One_Call_Stadium.jpg/1200px-One_Call_Stadium.jpg"
     }
   },
   {
@@ -515,8 +515,8 @@
     "fields": {
       "name": "Middlesbrough",
       "stadium": "Riverside Stadium",
-      "club_image": "http://middlesbrough.jpg",
-      "stadium_image": "http://riverside.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2c/Middlesbrough_FC_crest.svg/1200px-Middlesbrough_FC_crest.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Middlesbrough_Walk_%2839217038082%29.jpg"
     }
   },
   {
@@ -525,8 +525,8 @@
     "fields": {
       "name": "Millwall",
       "stadium": "The Den",
-      "club_image": "http://millwall.jpg",
-      "stadium_image": "http://theden.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/e/e7/This_is_the_logo_for_Millwall_Football_Club.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/5/52/The_New_Den_-_geograph.org.uk_-_1143517.jpg"
     }
   },
   {
@@ -535,8 +535,8 @@
     "fields": {
       "name": "Milton Keynes Dons",
       "stadium": "Stadium MK",
-      "club_image": "http://mkdons.jpg",
-      "stadium_image": "http://stadiummk.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/b/bf/MK_Dons.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/31/Stadium_MK.jpg"
     }
   },
   {
@@ -545,8 +545,8 @@
     "fields": {
       "name": "Morecambe",
       "stadium": "Globe Arena",
-      "club_image": "http://morecambe.jpg",
-      "stadium_image": "http://globearena.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/b/bd/Morecambe_FC.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Globe_Arena_-_1_-_geograph-2209665.jpg"
     }
   },
   {
@@ -555,8 +555,8 @@
     "fields": {
       "name": "Newcastle United",
       "stadium": "St James' Park",
-      "club_image": "http://newcastleunited.jpg",
-      "stadium_image": "http://stjamespark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Newcastle_United_Logo.svg/1200px-Newcastle_United_Logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/1/11/SJP-NUFCvMUFC%2827_Dec_21%29.jpg"
     }
   },
   {
@@ -565,8 +565,8 @@
     "fields": {
       "name": "Newport County",
       "stadium": "Rodney Parade",
-      "club_image": "http://newportcounty.jpg",
-      "stadium_image": "http://rodneyparade.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/b/b0/Newport_County_crest.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Rodney_Parade_Newport_2020.jpg"
     }
   },
   {
@@ -575,8 +575,8 @@
     "fields": {
       "name": "Northampton Town",
       "stadium": "Sixfields Stadium",
-      "club_image": "http://northamptontown.jpg",
-      "stadium_image": "http://sixfields.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/2/2d/Northampton_Town_F.C._logo.svg",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/39/Sixfieldsstadium.JPG"
     }
   },
   {
@@ -585,8 +585,8 @@
     "fields": {
       "name": "Norwich City",
       "stadium": "Carrow Road",
-      "club_image": "http://norwichcity.jpg",
-      "stadium_image": "http://carrowroad.jpg"
+      "club_image": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4e9.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Carrow_Road_exterior.jpg"
     }
   },
   {
@@ -595,8 +595,8 @@
     "fields": {
       "name": "Nottingham Forest",
       "stadium": "The City Ground",
-      "club_image": "http://nottinghamforest.jpg",
-      "stadium_image": "http://cityground.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e5/Nottingham_Forest_F.C._logo.svg/1200px-Nottingham_Forest_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Nottingham_MMB_15_City_Ground.jpg"
     }
   },
   {
@@ -605,8 +605,8 @@
     "fields": {
       "name": "Oxford United",
       "stadium": "Kassam Stadium",
-      "club_image": "http://oxfordunited.jpg",
-      "stadium_image": "http://kassam.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/3e/Oxford_United_FC_logo.svg/1200px-Oxford_United_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Kassam_Stadium%2C_Oxford.jpg"
     }
   },
   {
@@ -615,8 +615,8 @@
     "fields": {
       "name": "Peterborough United",
       "stadium": "Weston Homes Stadium",
-      "club_image": "http://peterboroughunited.jpg",
-      "stadium_image": "http://westonhomes.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d4/Peterborough_United.svg/1200px-Peterborough_United.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Peterborough_United%27s_South_Family_Stand_beginning_to_fill_up_-_geograph.org.uk_-_154824.jpg"
     }
   },
   {
@@ -625,8 +625,8 @@
     "fields": {
       "name": "Plymouth Argyle",
       "stadium": "Home Park",
-      "club_image": "http://plymouthargyle.jpg",
-      "stadium_image": "http://homepark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a8/Plymouth_Argyle_F.C._logo.svg/1200px-Plymouth_Argyle_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Homepark2.png"
     }
   },
   {
@@ -635,8 +635,8 @@
     "fields": {
       "name": "Port Vale",
       "stadium": "Vale Park",
-      "club_image": "http://portvale.jpg",
-      "stadium_image": "http://valepark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/5/5f/Port_Vale_logo.svg/1200px-Port_Vale_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Vale_Park.jpg/1200px-Vale_Park.jpg"
     }
   },
   {
@@ -645,8 +645,8 @@
     "fields": {
       "name": "Portsmouth",
       "stadium": "Fratton Park",
-      "club_image": "http://portsmouth.jpg",
-      "stadium_image": "http://frattonpark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/38/Portsmouth_FC_logo.svg/1200px-Portsmouth_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Fratton_Park_inside.jpg/250px-Fratton_Park_inside.jpg"
     }
   },
   {
@@ -655,8 +655,8 @@
     "fields": {
       "name": "Preston North End",
       "stadium": "Deepdale",
-      "club_image": "http://prestonnorthend.jpg",
-      "stadium_image": "http://deepdale.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/82/Preston_North_End_FC.svg/1200px-Preston_North_End_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Deepdalecomplete.jpg"
     }
   },
   {
@@ -664,9 +664,9 @@
     "pk": 67,
     "fields": {
       "name": "Queens Park Rangers",
-      "stadium": "Kiyan Prince Foundation Stadium",
-      "club_image": "http://qpr.jpg",
-      "stadium_image": "http://kiyanprince.jpg"
+      "stadium": "Loftus Road",
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/3/31/Queens_Park_Rangers_crest.svg/1200px-Queens_Park_Rangers_crest.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Loftus_Road_3.jpg"
     }
   },
   {
@@ -675,8 +675,8 @@
     "fields": {
       "name": "Reading",
       "stadium": "Madejski Stadium",
-      "club_image": "http://reading.jpg",
-      "stadium_image": "http://madejski.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/11/Reading_FC.svg/1200px-Reading_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/f/f9/Madejski_Stadium_aerial%2C_August_2014_%28cropped%29.jpg"
     }
   },
   {
@@ -685,8 +685,8 @@
     "fields": {
       "name": "Rochdale",
       "stadium": "Crown Oil Arena",
-      "club_image": "http://rochdale.jpg",
-      "stadium_image": "http://crownoilarena.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/d/d5/Rochdale_badge.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Spotland2.png"
     }
   },
   {
@@ -695,8 +695,8 @@
     "fields": {
       "name": "Rotherham United",
       "stadium": "New York Stadium",
-      "club_image": "http://rotherhamunited.jpg",
-      "stadium_image": "http://newyork.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c0/Rotherham_United_FC.svg/1200px-Rotherham_United_FC.svg.png",
+      "stadium_image": "https://www.themillers.co.uk/siteassets/image/new-york-stadium/generic-stadium/aesseal-nys-3-1440x810.jpg"
     }
   },
   {
@@ -705,8 +705,8 @@
     "fields": {
       "name": "Salford City",
       "stadium": "Peninsula Stadium",
-      "club_image": "http://salfordcity.jpg",
-      "stadium_image": "http://peninsula.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/f/f3/Salford_City_FC_Logo.png",
+      "stadium_image": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/2e/1e/1f/photo0jpg.jpg?w=1200&h=-1&s=1"
     }
   },
   {
@@ -715,8 +715,8 @@
     "fields": {
       "name": "Sheffield United",
       "stadium": "Bramall Lane",
-      "club_image": "http://sheffieldunited.jpg",
-      "stadium_image": "http://bramalllane.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9c/Sheffield_United_FC_logo.svg/1200px-Sheffield_United_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Bramall_Lane_End.jpg/220px-Bramall_Lane_End.jpg"
     }
   },
   {
@@ -725,8 +725,8 @@
     "fields": {
       "name": "Sheffield Wednesday",
       "stadium": "Hillsborough Stadium",
-      "club_image": "http://sheffieldwednesday.jpg",
-      "stadium_image": "http://hillsborough.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/88/Sheffield_Wednesday_badge.svg/1200px-Sheffield_Wednesday_badge.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Hillsborough_Stadium_interior.jpg"
     }
   },
   {
@@ -735,8 +735,8 @@
     "fields": {
       "name": "Shrewsbury Town",
       "stadium": "Montgomery Waters Meadow",
-      "club_image": "http://shrewsburytown.jpg",
-      "stadium_image": "http://montgomerywatersmeadow.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1b/Shrewsbury_Town_F.C._logo.svg/1200px-Shrewsbury_Town_F.C._logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/31/New_Meadow%2C_Shrewsbury%2C_25_October_2014.jpg"
     }
   },
   {
@@ -745,8 +745,8 @@
     "fields": {
       "name": "Southampton",
       "stadium": "St Mary's Stadium",
-      "club_image": "http://southampton.jpg",
-      "stadium_image": "http://stmarys.jpg"
+      "club_image": "https://assets.stickpng.com/images/580b57fcd9996e24bc43c4ea.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/5/52/St_Mary%27s_Stadium_%282%29.jpg"
     }
   },
   {
@@ -755,8 +755,8 @@
     "fields": {
       "name": "Stevenage Borough",
       "stadium": "Lamex Stadium",
-      "club_image": "http://stevenage.jpg",
-      "stadium_image": "http://lamexstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/commons/4/45/Stevenage_Football_Club.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Stevenagenight.jpg"
     }
   },
   {
@@ -765,8 +765,8 @@
     "fields": {
       "name": "Stockport County",
       "stadium": "Edgeley Park",
-      "club_image": "http://stockport.jpg",
-      "stadium_image": "http://edgeleypark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Stockport_County_FC_logo_2020.svg/1200px-Stockport_County_FC_logo_2020.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Edgeley_park_2021.jpg"
     }
   },
   {
@@ -775,8 +775,8 @@
     "fields": {
       "name": "Stoke City",
       "stadium": "Bet365 Stadium",
-      "club_image": "http://stokecity.jpg",
-      "stadium_image": "http://bet365stadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/29/Stoke_City_FC.svg/1200px-Stoke_City_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/d/da/Britannia_Stadium_1.JPG"
     }
   },
   {
@@ -785,8 +785,8 @@
     "fields": {
       "name": "Sunderland",
       "stadium": "Stadium of Light",
-      "club_image": "http://sunderland.jpg",
-      "stadium_image": "http://stadiumoflight.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/Logo_Sunderland.svg/1200px-Logo_Sunderland.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Stadium_of_light_Haway_the_lads.jpg"
     }
   },
   {
@@ -795,8 +795,8 @@
     "fields": {
       "name": "Sutton United",
       "stadium": "Gander Green Lane",
-      "club_image": "http://suttonunited.jpg",
-      "stadium_image": "http://gandersgreenlane.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/8/8f/Sutton_United_F.C._logo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/c/ca/Gander_green_lane.JPG"
     }
   },
   {
@@ -805,8 +805,8 @@
     "fields": {
       "name": "Swansea City",
       "stadium": "Liberty Stadium",
-      "club_image": "http://swanseacity.jpg",
-      "stadium_image": "http://libertystadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/1/16/Swansea_City_AFC_logo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/New_Morfa_Stadium_-_geograph.org.uk_-_32243.jpg/285px-New_Morfa_Stadium_-_geograph.org.uk_-_32243.jpg"
     }
   },
   {
@@ -815,8 +815,8 @@
     "fields": {
       "name": "Swindon Town",
       "stadium": "County Ground",
-      "club_image": "http://swindontown.jpg",
-      "stadium_image": "http://countyground.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/Swindon_Town_FC.svg/1200px-Swindon_Town_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Don_Rogers_Stand_2014-05-03_14-42.jpg"
     }
   },
   {
@@ -825,8 +825,8 @@
     "fields": {
       "name": "Tottenham Hotspur",
       "stadium": "Tottenham Hotspur Stadium",
-      "club_image": "http://tottenham.jpg",
-      "stadium_image": "http://tottenhamhotspurstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/b/b4/Tottenham_Hotspur.svg/1200px-Tottenham_Hotspur.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/b/be/London_Tottenham_Hotspur_Stadium.jpg"
     }
   },
   {
@@ -835,8 +835,8 @@
     "fields": {
       "name": "Tranmere Rovers",
       "stadium": "Prenton Park",
-      "club_image": "http://tranmererovers.jpg",
-      "stadium_image": "http://prentonpark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/e/e6/Tranmere_Rovers_FC_logo.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/32/Kop_and_mainstand.jpg"
     }
   },
   {
@@ -844,9 +844,9 @@
     "pk": 85,
     "fields": {
       "name": "Walsall",
-      "stadium": "Banks's Stadium",
-      "club_image": "http://walsall.jpg",
-      "stadium_image": "http://bankss.jpg"
+      "stadium": "Poundland Bescot Stadium",
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Walsall_FC.svg/1200px-Walsall_FC.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/34/WalsallF2Go.jpg"
     }
   },
   {
@@ -855,8 +855,8 @@
     "fields": {
       "name": "Watford",
       "stadium": "Vicarage Road",
-      "club_image": "http://watford.jpg",
-      "stadium_image": "http://vicarageroad.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/Watford.svg/1200px-Watford.svg.png",
+      "stadium_image": "https://shekicks.net/wp-content/uploads/2022/03/watford-fc-vicarage-road.jpg"
     }
   },
   {
@@ -865,8 +865,8 @@
     "fields": {
       "name": "West Bromwich Albion",
       "stadium": "The Hawthorns",
-      "club_image": "http://westbrom.jpg",
-      "stadium_image": "http://thehawthorns.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/8/8b/West_Bromwich_Albion.svg/1200px-West_Bromwich_Albion.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/West_brom_stadium.JPG/200px-West_brom_stadium.JPG"
     }
   },
   {
@@ -875,8 +875,8 @@
     "fields": {
       "name": "West Ham United",
       "stadium": "London Stadium",
-      "club_image": "http://westham.jpg",
-      "stadium_image": "http://londonstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/West_Ham_United_FC_logo.svg/1200px-West_Ham_United_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/34/London_Olympic_Stadium_West_Ham.jpg"
     }
   },
   {
@@ -885,8 +885,8 @@
     "fields": {
       "name": "Wigan Athletic",
       "stadium": "DW Stadium",
-      "club_image": "http://wigan.jpg",
-      "stadium_image": "http://dwwstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Wigan_Athletic.svg/1200px-Wigan_Athletic.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/a/a6/Warm_up_at_the_DW_Stadium%2C_Wigan_-_geograph.org.uk_-_2012508.jpg"
     }
   },
   {
@@ -895,8 +895,8 @@
     "fields": {
       "name": "Wolverhampton Wanderers",
       "stadium": "Molineux Stadium",
-      "club_image": "http://wolves.jpg",
-      "stadium_image": "http://molineuxstadium.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fc/Wolverhampton_Wanderers.svg/1200px-Wolverhampton_Wanderers.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/3/35/MolineuxStadium2022.jpg"
     }
   },
   {
@@ -905,8 +905,8 @@
     "fields": {
       "name": "Wycombe Wanderers",
       "stadium": "Adams Park",
-      "club_image": "http://wycombe.jpg",
-      "stadium_image": "http://adamspark.jpg"
+      "club_image": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fb/Wycombe_Wanderers_FC_logo.svg/1200px-Wycombe_Wanderers_FC_logo.svg.png",
+      "stadium_image": "https://upload.wikimedia.org/wikipedia/commons/5/57/Adams_Park_from_a_northerly_direction.JPG"
     }
   }
 ]

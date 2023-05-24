@@ -35,7 +35,7 @@ const Matches = ({ filteredMatches, error }) => {
       <Container>
         <Row>
           <Col xs="12">
-            <h1 className='display-4 mb-4 text-center'>Your Games</h1>
+            <h1 id="profileTitle" className='display-4 mb-4 text-center'>Your Games</h1>
           </Col>
           {isLoading ? (
             <Spinner />

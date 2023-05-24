@@ -98,7 +98,7 @@ span {
 }
 
 a:-webkit-any-link  {
-    color: pink;
+    color: orange;
     margin-bottom: 5px;
     text-decoration: none;
 }
@@ -106,6 +106,10 @@ a:-webkit-any-link  {
   margin-bottom: 4px;
 }
 
+.text-danger {
+  color: red !important;
+  padding-bottom: 10px;
+}
 
 
 .filters {
@@ -113,6 +117,7 @@ a:-webkit-any-link  {
   width: 100vh !important;
   margin: 0 auto;
   justify-content: space-evenly;
+  margin-bottom: 40px;
 }
 
 select{
@@ -174,6 +179,8 @@ select{
       margin-top: 10px;
       font-family: 'Graduate', serif !important;
     }
+
+   
 
     .notes{
       margin-top: 10px;
@@ -420,9 +427,6 @@ select{
     }
   }
 }
-.spinner {
-  height: 300px;
-}
 
 
     .btnCenter {
@@ -434,4 +438,56 @@ select{
       flex: 0 0;
     }
   }
+}
+
+#notes{
+  text-align: left !important;
+  color: rgb(177, 177, 214);
+}
+
+.spinner {
+  text-align: center !important;
+}
+
+#ball {
+  height: 140px;
+}
+
+#stadium {
+  max-height: 150px;
+  max-width: 200px;
+}
+
+#stadName {
+  margin-bottom: 40px;
+  color: rgb(177, 177, 214);
+  font-size: 14px;
+}
+
+#badge {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.date{
+  color: grey
+}
+
+#matchTitle {
+  margin-bottom: 50px;
+}
+
+#filter{
+  margin: 0px;
+  margin-top: 25px;
+  color: rgb(177, 177, 214);
+}
+
+#select{
+  margin-bottom: 30px;
 }

@@ -46,40 +46,49 @@ const Filters = ({ matches, setFilteredMatches }) => {
         <Col md={6} className='text-center'>
           <section className="filters">
             {/* Season dropdown */}
-            <p>Season</p>
-            <select name="season" value={filters.season} onChange={handleChange}>
-              <option value="All">All</option>
-              {matches &&
-                [...new Set(matches.map(match => match.season))].sort().map(season => {
-                  return <option key={season} value={season}>{season}</option>
-                })}
-            </select>
+            <div>
+              <p id="filter">Season</p>
+              <select id="select" name="season" value={filters.season} onChange={handleChange}>
+                <option value="All">All</option>
+                {matches &&
+                  [...new Set(matches.map(match => match.season))].sort().map(season => {
+                    return <option key={season} value={season}>{season}</option>
+                  })}
+              </select> 
+            </div>
 
             {/* Home team dropdown */}
-            <p>Home Team</p>
-            <select name="homeTeam" value={filters.homeTeam} onChange={handleChange}>
-              {homeTeamNames.map((teamName) => (
-                <option key={teamName} value={teamName}>{teamName}</option>
-              ))}
-            </select>
+            <div>
+              <p id="filter">Home Team</p>
+              <select id="select" name="homeTeam" value={filters.homeTeam} onChange={handleChange}>
+                {homeTeamNames.map((teamName) => (
+                  <option key={teamName} value={teamName}>{teamName}</option>
+                ))}
+              </select>
+            </div>
+
 
             {/* Away team dropdown */}
-            <p>Away Team</p>
-            <select name="awayTeam" value={filters.awayTeam} onChange={handleChange}>
-              {awayTeamNames.map((teamName) => (
-                <option key={teamName} value={teamName}>{teamName}</option>
-              ))}
-            </select>
+            <div>
+              <p id="filter">Away Team</p>
+              <select id="select" name="awayTeam" value={filters.awayTeam} onChange={handleChange}>
+                {awayTeamNames.map((teamName) => (
+                  <option key={teamName} value={teamName}>{teamName}</option>
+                ))}
+              </select>
+            </div>
 
             {/* Friend's name dropdown */}
-            <p>Friends</p>
-            <select name="friendName" value={filters.friendName} onChange={handleChange}>
-              {friendNames.map((name) => (
-                <option key={name} value={name}>
-                  {name}
-                </option>
-              ))}
-            </select>
+            <div>
+              <p id="filter">Friends</p>
+              <select id="select" name="friendName" value={filters.friendName} onChange={handleChange}>
+                {friendNames.map((name) => (
+                  <option key={name} value={name}>
+                    {name}
+                  </option>
+                ))}
+              </select>
+            </div>
           </section>
         </Col>
       </Row>
