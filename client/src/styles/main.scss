@@ -231,7 +231,6 @@ body {
   margin-top: 30px;
   background-image: url(https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/136156/Fans_clapping.jpg);
   height: 100vh;
-  width: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
@@ -514,29 +513,35 @@ select{
   .matchInfo {
     margin-left: 30px;
   }
-  .body {
-    height: 100vh;
-    width: 100vh;
-  }
   .hero {
-    margin-top: 100px;
     height: 100vh;
-    width: 100vh;
-    max-width: 767px;
+    width: 100vw;
   }
-  #logo {
-    width: 100vh;
-  }
+
   .home {
     max-width: 767px;
     height: 100vh;
+    margin-top: 40px;
   }
 
   .nav {
-    margin-top: 20px;
-    width: 100vh;
+    width: 100vh !important;
   }
-  .site-wrapper{
-    width: 100vh;
+
+  .site-wrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .nav-item {
+    width: auto;
+    margin-bottom: 10px;
+    text-align: center;
   }
 }
