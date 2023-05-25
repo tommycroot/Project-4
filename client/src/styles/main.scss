@@ -21,8 +21,9 @@ body {
   font-size: 12px;
 }
 .hero{
-  margin-top: 30px;
-  background-image: url(https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/136156/Fans_clapping.jpg);
+  padding: 50px;
+  border: 2px solid yellow;
+  border-radius: 15px;
   height: 100%;
   width: 100vh;
   background-repeat: no-repeat;
@@ -213,9 +214,7 @@ select{
       color: yellow;
     }
 
-
-
-
+ 
 * {
   box-sizing: border-box;
 }
@@ -226,13 +225,16 @@ body {
   font-family: 'Graduate', serif !important;
 }
 
+.logo {
+  padding: 40px;
+}
+
 .home{
   width: 100%;
- 
 }
+
 .hero{
   margin-top: 30px;
-  background-image: url(https://assets.publishing.service.gov.uk/government/uploads/system/uploads/image_data/file/136156/Fans_clapping.jpg);
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -240,6 +242,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  padding: 50px !important;
 }
 
 h1 {
@@ -458,8 +461,10 @@ select{
 }
 
 #stadium {
-  max-height: 150px;
-  max-width: 200px;
+  max-height: 175px;
+  max-width: 250px;
+  border: 2px solid yellow;
+  border-radius: 10px;
 }
 
 #stadName {
@@ -509,10 +514,12 @@ select{
 @media screen and (max-width: 767px) {
   .home
   {
+    margin-top: 40px;
     max-width: 400px;
     text-align: center;
   }
   .hero {
+    margin-top: 80px;
     max-width: 400px;
   }
   .nav {
@@ -538,7 +545,7 @@ select{
     margin-left: 10px;
   }
   #stadium {
-    max-height: 95px;
+    max-height: 115px;
   }
   .site-wrapper {
     max-width: 400px!important;
