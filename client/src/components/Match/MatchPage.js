@@ -79,7 +79,7 @@ const MatchPage = ({ user }) => {
               </div>
               <br />
             </div>
-            <div className='back'><Link className='back' to={'/'}>Back</Link></div>
+            <div className='back'><Link className='back' to={'/profile'}>Back</Link></div>
             {userIsOwner(match) && <div className='editItem'><Link id="edit" to={`/match/${id}/edit`}>Edit Match</Link></div>}
             {userIsOwner(match) && <div><Link className='text-danger' onClick={handleDelete}>Delete Match</Link></div>}
           </Col>
