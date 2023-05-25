@@ -509,21 +509,21 @@ select{
 @media screen and (max-width: 767px) {
   .home
   {
-    max-width: 370px;
+    max-width: 100vh;
     text-align: center;
   }
   .hero {
-    max-width: 375px;
+    max-width: 100vh;
   }
   .nav {
-    max-width: 370px;
+    max-width: 100vh;
   }
   .container {
-    max-width: 370px;
+    max-width: 100vh;
   }
   .filters {
     display: flex;
-    max-width: 370px;
+    max-width: 100vh;
     flex-wrap: wrap;
   }
   #badge1 {
@@ -542,7 +542,7 @@ select{
     max-width: 150px;
   }
   .site-wrapper {
-    max-width: 350px !important;
+    max-width: 100vh !important;
   }
   .filter {
     padding: 0px;
