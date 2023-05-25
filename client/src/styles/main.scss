@@ -509,21 +509,21 @@ select{
 @media screen and (max-width: 767px) {
   .home
   {
-    max-width: 375px;
+    max-width: 400px;
     text-align: center;
   }
   .hero {
-    max-width: 375px;
+    max-width: 400px;
   }
   .nav {
-    max-width: 375px;
+    max-width: 400px;
   }
   .container {
-    max-width: 375px;
+    max-width: 400px;
   }
   .filters {
     display: flex;
-    max-width: 375px;
+    max-width: 400px;
     flex-wrap: wrap;
   }
   #badge1 {
@@ -538,11 +538,10 @@ select{
     margin-left: 10px;
   }
   #stadium {
-    max-height: 75px;
-    max-width: 375px;
+    max-height: 95px;
   }
   .site-wrapper {
-    max-width: 375px !important;
+    max-width: 400px!important;
   }
   .filter {
     padding: 0px;
