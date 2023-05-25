@@ -65,6 +65,9 @@ span {
   text-align: center;
   margin-left: 25px;
 }
+#result {
+  margin-top: 10px;
+}
 .nav {
   max-width: 1320px;
   padding: 20px;
@@ -504,16 +507,40 @@ select{
 }
 
 @media screen and (max-width: 767px) {
-  .site-wrapper{
-    max-width: 767px;
+  .home
+  {
+    max-width: 360px;
+    text-align: center;
+  }
+  .hero {
+    max-width: 360px;
+    margin-left: 8px;
+  }
+  .nav {
+    max-width: 350px;
+  }
+  .container {
+    max-width: 340px;
+  }
+  .filters {
+    display: flex;
+    max-width: 350px;
+    flex-wrap: wrap;
   }
   #badge1 {
-    margin-left: 25px;
+    max-height: 75px;
   }
   #badge2 {
-    margin-right: 25px;
+    max-height: 75px;
   }
   .matchInfo {
-    margin-left: 30px;
+    margin-left: 10px;
+  }
+  #stadium {
+    max-height: 75px;
+    max-width: 150px;
+  }
+  .site-wrapper {
+    max-width: 350px !important;
   }
 }

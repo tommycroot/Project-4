@@ -68,7 +68,9 @@ const Matches = ({ filteredMatches, error }) => {
                       <Card.Body>
                         <Card.Text>
                           {home_team.name} vs {away_team.name}{' '}
-                          <span>{result}</span>{' '}
+                          <br></br>
+                          <br></br>
+                          <span id="result">{result}</span>{' '}
                           <h4 className="date">{date}</h4>{' '}
                         </Card.Text>
                       </Card.Body>
