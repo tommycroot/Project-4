@@ -504,6 +504,9 @@ select{
 }
 
 @media screen and (max-width: 767px) {
+  .site-wrapper{
+    max-width: 767px;
+  }
   #badge1 {
     margin-left: 25px;
   }
