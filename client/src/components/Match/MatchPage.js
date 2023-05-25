@@ -48,7 +48,7 @@ const MatchPage = ({ user }) => {
         <Row className="item-row">
           <Col className='match-title'>
             <h1 id="matchTitle">{home_team.name} vs {away_team.name}</h1>
-            <p className='images'><img id="badge"src={home_team.club_image}></img><img id="stadium" src={home_team.stadium_image} alt="Stadium" /><img id="badge"src={away_team.club_image}></img></p>
+            <p className='images'><img id="badge1"src={home_team.club_image}></img><img id="stadium" src={home_team.stadium_image} alt="Stadium" /><img id="badge2"src={away_team.club_image}></img></p>
           </Col>
         </Row>
         <Row className="imageInfoRow">
@@ -79,6 +79,7 @@ const MatchPage = ({ user }) => {
               </div>
               <br />
             </div>
+            <div className='back'><Link className='back' to={'/'}>Back</Link></div>
             {userIsOwner(match) && <div className='editItem'><Link id="edit" to={`/match/${id}/edit`}>Edit Match</Link></div>}
             {userIsOwner(match) && <div><Link className='text-danger' onClick={handleDelete}>Delete Match</Link></div>}
           </Col>
