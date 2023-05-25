@@ -66,9 +66,7 @@ span {
   text-align: center;
   margin-left: 25px;
 }
-#result {
-  margin-top: 10px;
-}
+
 .nav {
   max-width: 1320px;
   padding: 20px;
@@ -506,9 +504,18 @@ select{
   margin-bottom: 30px;
 }
 
+#result {
+  margin-top: 22px;
+}
+
 .back{
   color: rgb(177, 177, 214) !important;
   margin-bottom: 5px;
+}
+
+.date-result-container {
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -516,12 +523,11 @@ select{
   {
     margin-top: 40px;
     max-width: 400px;
-    text-align: center;
+  
   }
   .hero {
     margin-top: 80px;
     max-width: 400px;
-    text-align: center;
   }
   .nav {
     max-width: 400px;

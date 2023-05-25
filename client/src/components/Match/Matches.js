@@ -20,7 +20,6 @@ const Matches = ({ filteredMatches, error }) => {
   useEffect(() => {
     setIsLoading(true)
 
-    // Simulate loading data for 2 seconds
     const timeoutId = setTimeout(() => {
       setIsLoading(false)
     }, 2000)
@@ -29,6 +28,11 @@ const Matches = ({ filteredMatches, error }) => {
       clearTimeout(timeoutId)
     }
   }, [])
+
+  function formatDate(date) {
+    const [year, month, day] = date.split('-')
+    return `${day}-${month}-${year}`
+  }
 
   return (
     <main>
@@ -68,10 +72,11 @@ const Matches = ({ filteredMatches, error }) => {
                       <Card.Body>
                         <Card.Text>
                           {home_team.name} vs {away_team.name}{' '}
-                          <br></br>
-                          <br></br>
-                          <span id="result">{result}</span>{' '}
-                          <h4 className="date">{date}</h4>{' '}
+                          <br />
+                          <div className="date-result-container">
+                            <h4 className="date">{formatDate(date)}</h4>{' '}
+                            <span id="result">{result}</span>{' '}
+                          </div>
                         </Card.Text>
                       </Card.Body>
                     </Card>

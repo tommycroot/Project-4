@@ -42,6 +42,11 @@ const MatchPage = ({ user }) => {
     }
   }
 
+  function formatDate(date) {
+    const [year, month, day] = date.split('-')
+    return `${day}-${month}-${year}`
+  }
+
   return (
     <>
       <Container>
@@ -59,7 +64,7 @@ const MatchPage = ({ user }) => {
             <div className='matchInfoText'>
               <p id="stadName">{home_team.stadium}</p>
               <h3>Season:<span>{season}</span></h3>
-              <h3>Date:<span>{date}</span></h3>
+              <h3>Date:<span>{formatDate(date)}</span></h3>
               <h3>Score:<span>{result}</span></h3>
               <h3>Competition:<span>{competition}</span></h3>
               <h3>Goalscorers:<span>{goalscorers}</span></h3>
