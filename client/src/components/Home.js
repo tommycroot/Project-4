@@ -1,3 +1,4 @@
+import Container from 'react-bootstrap/esm/Container'
 import logo from '../images/logo.png'
 import { useEffect, useState } from 'react'
 
@@ -21,11 +22,13 @@ const Home = () => {
   }, [backgrounds])
 
   return (
-    <div className="home">
-      <div className="hero" style={{ backgroundImage: `url(${backgrounds[backgroundIndex]})` }}>
-        <img src={logo} className="logo" alt="logo"></img>
+    <div className='container'>
+      <div className="home">
+        <div className="hero" style={{ backgroundImage: `url(${backgrounds[backgroundIndex]})` }}>
+          <img src={logo} className="logo" alt="logo"></img>
+        </div>
+        <p>Keeping track of your games</p>
       </div>
-      <p>Keeping track of your games</p>
     </div>
   )
 }
