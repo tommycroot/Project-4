@@ -522,24 +522,27 @@ select{
   .home
   {
     margin-top: 40px;
-    max-width: 420px;
+    max-width: 400px;
   
   }
   .hero {
     margin-top: 80px;
-    max-width: 420px;
+    max-width: 340px;
     margin: 0 auto;
   }
 
+  #select {
+    width: 40px;
+  }
   .nav {
-    max-width: 420px;
+    max-width: 400px;
   }
   .container {
-    max-width: 420px;
+    max-width: 400px;
   }
   .filters {
     display: flex;
-    max-width: 420px;
+    max-width: 400px;
     flex-wrap: wrap;
   }
   #badge1 {
