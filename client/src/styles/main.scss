@@ -523,8 +523,7 @@ select{
   {
     margin-top: 40px;
     max-width: 400px;
-    width: 100vh;
-    margin: 0 auto;
+    width: 100vh !important;
   
   }
   .hero {
@@ -539,6 +538,7 @@ select{
   .nav {
     max-width: 400px;
     width: 100vh;
+    margin: 0 auto;
   }
   .container {
     max-width: 400px;
@@ -564,7 +564,7 @@ select{
     max-height: 85px;
   }
   .site-wrapper {
-    max-width: 440px!important;
+    max-width: 400px!important;
     width: 100vh !important;
   }
   .filter {
