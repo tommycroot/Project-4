@@ -8,7 +8,7 @@ During the final week of the course I was tasked with building a full stack appl
 
 ## Deployment Link
 
-The app is deployed [here](http://haglproject.herokuapp.com/)
+The app is deployed [here](http://footydiary.herokuapp.com/)
 
 ## Getting Started/Code Installation
 
