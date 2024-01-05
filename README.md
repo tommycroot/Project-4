@@ -4,7 +4,10 @@
 
 During the final week of the course I was tasked with building a full stack application of my choice. The brief required the use of a Python Django API with Django REST framework serving the data from a Postgres database. Based on my love of football and the fact I enjoy attending random games, I decided to create an app that allowed a user to keep track of the games they’ve been to, the details of the game itself and who they attended it with. 
 
-![2023-05-09 (1)](https://github.com/tommycroot/Project-4/assets/80596226/637867a0-32c0-48ce-b881-ed02ae40c560)
+![footydiary2](https://github.com/tommycroot/Project-4/assets/80596226/6c027d5b-f8e9-4dc8-b4f7-5644e9745ddc)
+
+![footydiary](https://github.com/tommycroot/Project-4/assets/80596226/cc8d6e63-51ff-4ef8-b019-6dcfad455d54)
+
 
 ## Deployment Link
 
